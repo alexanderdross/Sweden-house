@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 
 export default function MobileMenu({
@@ -89,11 +90,16 @@ export default function MobileMenu({
         </svg>
       </button>
 
-      {open && (
-        <div
-          className="fixed inset-0 z-[60] bg-sea-950/50"
-          onClick={close}
-        >
+      {/*
+        Render the overlay via a portal to document.body. The Header uses
+        `backdrop-blur` (backdrop-filter), which establishes a containing block
+        for position:fixed descendants, so a fixed overlay nested in the header
+        would be sized to the header bar instead of the viewport. Portalling to
+        the body escapes that containing block.
+      */}
+      {open &&
+        createPortal(
+          <div className="fixed inset-0 z-[60] bg-sea-950/50" onClick={close}>
           <div
             ref={panelRef}
             id="mobile-menu"
@@ -151,8 +157,9 @@ export default function MobileMenu({
               </a>
             </nav>
           </div>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
     </div>
   );
 }
