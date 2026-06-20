@@ -1,0 +1,157 @@
+{
+  "brand": "Talo Flatönissä",
+  "meta": {
+    "title": "Talo Flatönissä — moderni lomatalo Bohuslänin saaristossa",
+    "description": "Tyylikäs ja moderni lomatalo Flatönin saarella keskellä Bohuslänin saaristoa, Ruotsissa. Tilaa jopa 8 vieraalle, koiraystävällinen, tilava terassi ja merikylpy lähellä. Varaa suoraan isännältä."
+  },
+  "nav": {
+    "about": "Talo",
+    "gallery": "Kuvat",
+    "amenities": "Varustelu",
+    "location": "Sijainti",
+    "availability": "Vapaat ajat",
+    "book": "Lähetä varauspyyntö",
+    "bookNow": "Varaa"
+  },
+  "hero": {
+    "tagline": "Rauhallinen ja tyylikäs pakopaikka Bohuslänin saaristossa",
+    "subtitle": "Moderni lomatalo Flatönin saarella — tilava terassi, takka ja merikylpy vain lyhyen kävelyn päässä. Täydellinen perheille, ystäville ja koirallesi.",
+    "cta": "Lähetä varauspyyntö",
+    "ctaSecondary": "Katso kuvat"
+  },
+  "about": {
+    "heading": "Tervetuloa taloon",
+    "body": "Flatönin saarella, keskellä Bohuslänin saaristoa, tämä moderni talo yhdistää luonnon ja mukavuuden rauhallisessa, kauniissa ympäristössä lähellä merta. Yläkerrassa on valoisa avokeittiö sekä olo- ja ruokailutila, josta on käynti tilavalle terassille, jossa on grilli ja kaasukäyttöinen pizzauuni. Sisällä on takka, suuret ikkunat täynnä valoa, ilmastointi kuumia päiviä varten ja avara kylpyhuone vapaasti seisovalla ammeella. Kolme makuuhuonetta ja lisävuodepaikat tekevät talosta ihanteellisen kuudelle vieraalle, ja tilaa on jopa kahdeksalle. Aurinkoisia päiviä terassilla, uintia meressä ja kodikkaita iltoja takan ääressä — ja koirat ovat lämpimästi tervetulleita.",
+    "guests": "Vieraat",
+    "bedrooms": "Makuuhuoneet",
+    "beds": "Vuoteet",
+    "bathrooms": "Kylpyhuoneet",
+    "perNight": "/ yö",
+    "from": "alkaen",
+    "minNights": "Vähintään {count} yötä"
+  },
+  "gallery": {
+    "heading": "Katsaus taloon",
+    "captions": {
+      "exterior": "Musta puutalo hämärässä",
+      "kitchen": "Moderni avokeittiö",
+      "living": "Olohuone takalla",
+      "terrace": "Terassi ja ulkoruokailutila",
+      "dining": "Ruokailutila näköalalla",
+      "bathroom": "Kylpyhuone vapaasti seisovalla ammeella",
+      "fireplace": "Kodikas takka talvinäkymin",
+      "bedroom": "Rauhallinen makuuhuone parivuoteella",
+      "bedroomSingle": "Valoisa makuuhuone yhden hengen vuoteella",
+      "kitchenDetail": "Keittiön yksityiskohtia",
+      "sea": "Meri ja laituri lähellä"
+    }
+  },
+  "amenities": {
+    "heading": "Mitä talo tarjoaa",
+    "wifi": "Wi-Fi",
+    "kitchen": "Täysin varusteltu keittiö",
+    "pizzaOven": "Kaasukäyttöinen pizzauuni",
+    "grill": "Grilli",
+    "terrace": "Terassi ja ulkoruokailutila",
+    "fireplace": "Takka",
+    "ac": "Ilmastointi",
+    "heating": "Keskuslämmitys",
+    "bathtub": "Kylpyamme ja suihku",
+    "washer": "Pesukone",
+    "tv": "TV",
+    "workspace": "Työpiste",
+    "gym": "Kuntoiluvälineet",
+    "parking": "Ilmainen pysäköinti tontilla",
+    "seaNearby": "Merikylpy lähellä",
+    "natureView": "Luontonäkymät",
+    "pets": "Koiraystävällinen",
+    "selfCheckIn": "Itsesisäänkirjautuminen (koodilukko)"
+  },
+  "location": {
+    "heading": "Tässä majoitut",
+    "body": "Talo sijaitsee Flatönin saarella, rauhallisella saarella, joka on yhdistetty siltaa pitkin Orustiin Bohuslänin rannikolla — noin 1,5 tuntia Göteborgista pohjoiseen. Ympärilläsi on sileitä kallioita, metsää ja avointa vettä, useita uimapaikkoja ja meri vain lyhyen kävelyn päässä. Kaupat ja ravintolat ovat lyhyen ajomatkan päässä Orustissa.",
+    "openInMaps": "Avaa Google Mapsissa",
+    "coordinates": "Koordinaatit",
+    "mapAlt": "Kartta, joka näyttää talon sijainnin Flatönissä, Bohuslänissä"
+  },
+  "availability": {
+    "heading": "Vapaat ajat",
+    "subtitle": "Harmaat päivät on jo varattu. Valitse yösi ja lähetä pyyntö alta.",
+    "available": "Vapaa",
+    "booked": "Varattu",
+    "selected": "Oleskelusi",
+    "loading": "Ladataan vapaita aikoja…",
+    "error": "Kalenteria ei voitu ladata juuri nyt. Voit silti lähettää pyynnön alta."
+  },
+  "booking": {
+    "heading": "Lähetä varauspyyntö",
+    "subtitle": "Lähetä toivomasi päivät, niin vastaamme 48 tunnin kuluessa ja vahvistamme. Maksua ei veloiteta nyt.",
+    "checkIn": "Saapuminen",
+    "checkOut": "Lähtö",
+    "guests": "Vieraat",
+    "name": "Koko nimi",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "phoneOptional": "Puhelin (valinnainen)",
+    "message": "Viesti",
+    "messagePlaceholder": "Kerro hieman matkastasi…",
+    "submit": "Lähetä pyyntö",
+    "submitting": "Lähetetään…",
+    "successTitle": "Pyyntö lähetetty!",
+    "successBody": "Kiitos – olemme vastaanottaneet pyyntösi ja vastaamme sähköpostitse 48 tunnin kuluessa.",
+    "errorTitle": "Jokin meni pieleen",
+    "errorBody": "Pyyntöäsi ei voitu lähettää. Yritä uudelleen tai lähetä meille sähköpostia suoraan.",
+    "notConfiguredTitle": "Varaussähköpostia ei ole vielä määritetty",
+    "notConfiguredBody": "Isäntä ei ole vielä yhdistänyt sähköpostipalvelua. Ota yhteyttä Airbnb:n kautta tai alatunnisteen sähköpostiosoitteeseen.",
+    "nights": "{count, plural, =1 {# yö} other {# yötä}}",
+    "estimatedTotal": "Arvioitu yhteensä",
+    "priceNote": "Lopullisen hinnan vahvistaa isäntä.",
+    "validation": {
+      "datesRequired": "Valitse saapumis- ja lähtöpäivä.",
+      "checkoutAfter": "Lähtöpäivän on oltava saapumispäivän jälkeen.",
+      "nameRequired": "Anna nimesi.",
+      "emailInvalid": "Anna kelvollinen sähköpostiosoite.",
+      "guestsRange": "Anna kelvollinen vieraiden määrä.",
+      "datesUnavailable": "Osa noista öistä on jo varattu. Valitse toiset päivät.",
+      "minNights": "Vähimmäisoleskelu on {count} yötä."
+    }
+  },
+  "faq": {
+    "heading": "Hyvä tietää",
+    "q1": "Miten varaan?",
+    "a1": "Valitse päivät ja lähetä pyyntö lomakkeella. Vahvistamme saatavuuden sähköpostitse, yleensä 48 tunnin kuluessa. Tällä sivustolla ei veloiteta maksua.",
+    "q2": "Miten sisäänkirjautuminen toimii?",
+    "a2": "Sisäänkirjautuminen tapahtuu koodilukolla, joten voit saapua sinulle sopivaan aikaan; lähtö klo 11 mennessä. Lähetämme ovikoodin ja ajo-ohjeet ennen oleskeluasi.",
+    "q3": "Voinko tuoda koiran?",
+    "a3": "Totta kai – talo on koiraystävällinen. Kerro vain varauspyynnössäsi, että tuot koiran mukana.",
+    "q4": "Miten pääsen perille?",
+    "a4": "Flatönille on noin 1,5 tunnin ajomatka Göteborgista pohjoiseen, ja sinne pääsee siltaa pitkin Orustista. Auto on helpoin tapa tutustua saaristoon, ja tontilla on ilmainen pysäköinti.",
+    "q5": "Onko tämä sama kuin Airbnb-ilmoituksenne?",
+    "a5": "Kyllä – kyseessä on sama talo. Varaamalla suoraan täältä tavoitat meidät ilman alustan palvelumaksuja. Voit toki halutessasi varata myös Airbnb:n kautta."
+  },
+  "footer": {
+    "tagline": "Moderni lomatalo Flatönissä, Bohuslänissä.",
+    "contact": "Yhteystiedot",
+    "viewOnAirbnb": "Katso Airbnb:ssä",
+    "rights": "Kaikki oikeudet pidätetään.",
+    "language": "Kieli"
+  },
+  "email": {
+    "guestSubject": "Olemme vastaanottaneet varauspyyntösi — {house}",
+    "guestGreeting": "Hei {name},",
+    "guestIntro": "Kiitos pyynnöstäsi majoittua kohteessa {house}. Olemme vastaanottaneet alla olevat tiedot ja vastaamme 48 tunnin kuluessa vahvistaaksemme saatavuuden. Maksua ei ole veloitettu.",
+    "guestOutro": "Toivotamme sinut lämpimästi tervetulleeksi Flatönille!",
+    "ownerSubject": "Uusi varauspyyntö: {checkIn} → {checkOut} ({guests} vierasta)",
+    "ownerIntro": "Sait uuden suoran varauspyynnön verkkosivustoltasi:",
+    "labelDates": "Päivät",
+    "labelNights": "Yöt",
+    "labelGuests": "Vieraat",
+    "labelName": "Nimi",
+    "labelEmail": "Sähköposti",
+    "labelPhone": "Puhelin",
+    "labelMessage": "Viesti",
+    "labelEstimate": "Arvioitu yhteensä",
+    "labelLanguage": "Vieraan kieli",
+    "signature": "— {house}"
+  }
+}

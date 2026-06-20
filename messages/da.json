@@ -1,0 +1,157 @@
+{
+  "brand": "Huset på Flatön",
+  "meta": {
+    "title": "Huset på Flatön — moderne feriehus i Bohusläns skærgård",
+    "description": "Et stilfuldt og moderne feriehus på øen Flatön i hjertet af Bohusläns skærgård, Sverige. Plads til op til 8 gæster, hundevenligt, rummelig terrasse og havbad i nærheden. Book direkte hos værten."
+  },
+  "nav": {
+    "about": "Huset",
+    "gallery": "Billeder",
+    "amenities": "Faciliteter",
+    "location": "Beliggenhed",
+    "availability": "Ledige datoer",
+    "book": "Send bookingforespørgsel",
+    "bookNow": "Book"
+  },
+  "hero": {
+    "tagline": "Et roligt og stilfuldt tilflugtssted i Bohusläns skærgård",
+    "subtitle": "Et moderne feriehus på øen Flatön — rummelig terrasse, brændeovn og havbad blot en kort gåtur væk. Perfekt for familier, venner og din hund.",
+    "cta": "Send bookingforespørgsel",
+    "ctaSecondary": "Se billeder"
+  },
+  "about": {
+    "heading": "Velkommen til huset",
+    "body": "På øen Flatön, midt i Bohusläns skærgård, forener dette moderne hus natur og komfort i rolige, naturskønne omgivelser tæt på havet. Øverste etage åbner sig i et lyst køkken-, opholds- og spiseområde i åben plan med udgang til en rummelig terrasse med grill og en gasdrevet pizzaovn. Indenfor er der brændeovn, store vinduer fyldt med lys, aircondition til varme dage og et stort badeværelse med fritstående badekar. Tre soveværelser og ekstra sovepladser gør huset ideelt til seks gæster, med plads til op til otte. Solrige dage på terrassen, bad i havet og hyggelige aftener ved pejsen — og hunde er hjerteligt velkomne.",
+    "guests": "Gæster",
+    "bedrooms": "Soveværelser",
+    "beds": "Senge",
+    "bathrooms": "Badeværelser",
+    "perNight": "pr. nat",
+    "from": "fra",
+    "minNights": "Mindst {count} nætter"
+  },
+  "gallery": {
+    "heading": "Et kig rundt",
+    "captions": {
+      "exterior": "Det sorte træhus i skumringen",
+      "kitchen": "Moderne køkken i åben plan",
+      "living": "Opholdsrum med brændeovn",
+      "terrace": "Terrasse med uderum",
+      "dining": "Spiseplads med udsigt",
+      "bathroom": "Badeværelse med fritstående badekar",
+      "fireplace": "Hyggelig pejs med vinterudsigt",
+      "bedroom": "Roligt soveværelse med dobbeltseng",
+      "bedroomSingle": "Lyst soveværelse med enkeltseng",
+      "kitchenDetail": "Detaljer i køkkenet",
+      "sea": "Havet og bådebroen i nærheden"
+    }
+  },
+  "amenities": {
+    "heading": "Hvad huset byder på",
+    "wifi": "Wi-Fi",
+    "kitchen": "Fuldt udstyret køkken",
+    "pizzaOven": "Gasdrevet pizzaovn",
+    "grill": "Grill",
+    "terrace": "Terrasse med uderum",
+    "fireplace": "Brændeovn",
+    "ac": "Aircondition",
+    "heating": "Centralvarme",
+    "bathtub": "Badekar og bruser",
+    "washer": "Vaskemaskine",
+    "tv": "TV",
+    "workspace": "Arbejdsplads",
+    "gym": "Træningsudstyr",
+    "parking": "Gratis parkering på grunden",
+    "seaNearby": "Havbad i nærheden",
+    "natureView": "Naturudsigt",
+    "pets": "Hundevenligt",
+    "selfCheckIn": "Selv-check-in (kodelås)"
+  },
+  "location": {
+    "heading": "Her bor du",
+    "body": "Huset ligger på Flatön, en fredelig ø forbundet med Orust via bro på Bohusläns kyst — omkring 1,5 time nord for Göteborg. Du er omgivet af glatte klipper, skov og åbent vand, med flere badesteder og havet blot en kort gåtur væk. Butikker og restauranter ligger en kort køretur væk på Orust.",
+    "openInMaps": "Åbn i Google Maps",
+    "coordinates": "Koordinater",
+    "mapAlt": "Kort der viser husets beliggenhed på Flatön, Bohuslän"
+  },
+  "availability": {
+    "heading": "Ledige datoer",
+    "subtitle": "Gråtonede datoer er allerede booket. Vælg dine nætter, og send en forespørgsel nedenfor.",
+    "available": "Ledigt",
+    "booked": "Booket",
+    "selected": "Dit ophold",
+    "loading": "Henter ledige datoer…",
+    "error": "Kunne ikke indlæse kalenderen lige nu. Du kan stadig sende en forespørgsel nedenfor."
+  },
+  "booking": {
+    "heading": "Send bookingforespørgsel",
+    "subtitle": "Send dine ønskede datoer, så vender vi tilbage inden for 48 timer for at bekræfte. Der opkræves ingen betaling nu.",
+    "checkIn": "Ankomst",
+    "checkOut": "Afrejse",
+    "guests": "Gæster",
+    "name": "Fulde navn",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "phoneOptional": "Telefon (valgfrit)",
+    "message": "Besked",
+    "messagePlaceholder": "Fortæl os lidt om din rejse…",
+    "submit": "Send forespørgsel",
+    "submitting": "Sender…",
+    "successTitle": "Forespørgsel sendt!",
+    "successBody": "Tak – vi har modtaget din forespørgsel og svarer via e-mail inden for 48 timer.",
+    "errorTitle": "Noget gik galt",
+    "errorBody": "Din forespørgsel kunne ikke sendes. Prøv igen, eller send os en e-mail direkte.",
+    "notConfiguredTitle": "Booking-e-mail er endnu ikke konfigureret",
+    "notConfiguredBody": "Værten har endnu ikke tilsluttet en e-mailudbyder. Kontakt os via Airbnb eller kontakt-e-mailen i bunden.",
+    "nights": "{count, plural, =1 {# nat} other {# nætter}}",
+    "estimatedTotal": "Anslået i alt",
+    "priceNote": "Den endelige pris bekræftes af værten.",
+    "validation": {
+      "datesRequired": "Vælg datoer for ankomst og afrejse.",
+      "checkoutAfter": "Afrejse skal være efter ankomst.",
+      "nameRequired": "Indtast dit navn.",
+      "emailInvalid": "Indtast en gyldig e-mailadresse.",
+      "guestsRange": "Indtast et gyldigt antal gæster.",
+      "datesUnavailable": "Nogle af de nætter er allerede booket. Vælg andre datoer.",
+      "minNights": "Minimumsophold er {count} nætter."
+    }
+  },
+  "faq": {
+    "heading": "Godt at vide",
+    "q1": "Hvordan booker jeg?",
+    "a1": "Vælg dine datoer, og send en forespørgsel via formularen. Vi bekræfter ledighed via e-mail, normalt inden for 48 timer. Der opkræves ingen betaling på denne side.",
+    "q2": "Hvordan foregår check-in?",
+    "a2": "Check-in sker med kodelås, så du kan ankomme, når det passer dig; afrejse senest kl. 11. Vi sender dørkode og vejledning før dit ophold.",
+    "q3": "Må jeg tage min hund med?",
+    "a3": "Helt sikkert – huset er hundevenligt. Fortæl os blot, at du tager en hund med, når du sender din forespørgsel.",
+    "q4": "Hvordan kommer jeg dertil?",
+    "a4": "Flatön ligger cirka 1,5 times kørsel nord for Göteborg og nås via bro fra Orust. Bil er den nemmeste måde at udforske skærgården på, og der er gratis parkering på grunden.",
+    "q5": "Er det det samme som jeres Airbnb-opslag?",
+    "a5": "Ja – det er det samme hus. Når du booker direkte her, når du os uden platformsgebyrer. Du er naturligvis også velkommen til at booke via Airbnb, hvis du foretrækker det."
+  },
+  "footer": {
+    "tagline": "Et moderne feriehus på Flatön, Bohuslän.",
+    "contact": "Kontakt",
+    "viewOnAirbnb": "Se på Airbnb",
+    "rights": "Alle rettigheder forbeholdes.",
+    "language": "Sprog"
+  },
+  "email": {
+    "guestSubject": "Vi har modtaget din bookingforespørgsel — {house}",
+    "guestGreeting": "Hej {name},",
+    "guestIntro": "Tak for din forespørgsel om at bo i {house}. Vi har modtaget oplysningerne nedenfor og svarer inden for 48 timer for at bekræfte ledigheden. Der er ikke opkrævet nogen betaling.",
+    "guestOutro": "Vi glæder os til at byde dig velkommen til Flatön!",
+    "ownerSubject": "Ny bookingforespørgsel: {checkIn} → {checkOut} ({guests} gæster)",
+    "ownerIntro": "Du har en ny direkte bookingforespørgsel fra din hjemmeside:",
+    "labelDates": "Datoer",
+    "labelNights": "Nætter",
+    "labelGuests": "Gæster",
+    "labelName": "Navn",
+    "labelEmail": "E-mail",
+    "labelPhone": "Telefon",
+    "labelMessage": "Besked",
+    "labelEstimate": "Anslået i alt",
+    "labelLanguage": "Gæstens sprog",
+    "signature": "— {house}"
+  }
+}

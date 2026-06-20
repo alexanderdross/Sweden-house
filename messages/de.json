@@ -1,0 +1,157 @@
+{
+  "brand": "Haus auf Flatön",
+  "meta": {
+    "title": "Haus auf Flatön — modernes Ferienhaus in Bohusläns Schärengarten",
+    "description": "Ein stilvolles, modernes Ferienhaus auf der Insel Flatön im Herzen des Schärengartens von Bohuslän, Schweden. Platz für bis zu 8 Gäste, hundefreundlich, großzügige Terrasse und Baden im Meer ganz in der Nähe. Direkt beim Gastgeber buchen."
+  },
+  "nav": {
+    "about": "Das Haus",
+    "gallery": "Fotos",
+    "amenities": "Ausstattung",
+    "location": "Lage",
+    "availability": "Verfügbarkeit",
+    "book": "Buchungsanfrage senden",
+    "bookNow": "Buchen"
+  },
+  "hero": {
+    "tagline": "Ein ruhiger, stilvoller Rückzugsort im Schärengarten von Bohuslän",
+    "subtitle": "Ein modernes Ferienhaus auf der Insel Flatön — großzügige Terrasse, Kaminfeuer und Baden im Meer nur einen kurzen Spaziergang entfernt. Perfekt für Familien, Freunde und Ihren Hund.",
+    "cta": "Buchungsanfrage senden",
+    "ctaSecondary": "Fotos ansehen"
+  },
+  "about": {
+    "heading": "Willkommen im Haus",
+    "body": "Auf der Insel Flatön im Herzen des Schärengartens von Bohuslän verbindet dieses moderne Haus Natur und Komfort in einer ruhigen, malerischen Umgebung nahe am Meer. Das Obergeschoss öffnet sich zu einem hellen, offenen Wohn-, Ess- und Küchenbereich mit Zugang zu einer großzügigen Terrasse mit Grill und gasbetriebenem Pizzaofen. Im Inneren gibt es einen Kamin, große Fenster voller Licht, eine Klimaanlage für warme Tage und ein großzügiges Badezimmer mit freistehender Wanne. Drei Schlafzimmer und zusätzliche Schlafmöglichkeiten machen das Haus ideal für sechs Gäste, mit Platz für bis zu acht. Sonnige Tage auf der Terrasse, Bäder im Meer und gemütliche Abende am Kamin — und Hunde sind herzlich willkommen.",
+    "guests": "Gäste",
+    "bedrooms": "Schlafzimmer",
+    "beds": "Betten",
+    "bathrooms": "Badezimmer",
+    "perNight": "pro Nacht",
+    "from": "ab",
+    "minNights": "Mindestens {count} Nächte"
+  },
+  "gallery": {
+    "heading": "Ein Rundgang",
+    "captions": {
+      "exterior": "Das schwarze Holzhaus in der Dämmerung",
+      "kitchen": "Moderne offene Küche",
+      "living": "Wohnzimmer mit Kamin",
+      "terrace": "Terrasse mit Außenessbereich",
+      "dining": "Essbereich mit Aussicht",
+      "bathroom": "Badezimmer mit freistehender Wanne",
+      "fireplace": "Gemütlicher Kamin mit Winteraussicht",
+      "bedroom": "Erholsames Schlafzimmer mit Doppelbett",
+      "bedroomSingle": "Helles Schlafzimmer mit Einzelbett",
+      "kitchenDetail": "Details der Küche",
+      "sea": "Das Meer und der Steg in der Nähe"
+    }
+  },
+  "amenities": {
+    "heading": "Was das Haus bietet",
+    "wifi": "WLAN",
+    "kitchen": "Voll ausgestattete Küche",
+    "pizzaOven": "Gasbetriebener Pizzaofen",
+    "grill": "Grill",
+    "terrace": "Terrasse mit Außenessbereich",
+    "fireplace": "Kamin",
+    "ac": "Klimaanlage",
+    "heating": "Zentralheizung",
+    "bathtub": "Badewanne & Dusche",
+    "washer": "Waschmaschine",
+    "tv": "TV",
+    "workspace": "Arbeitsplatz",
+    "gym": "Trainingsgeräte",
+    "parking": "Kostenlose Parkplätze am Haus",
+    "seaNearby": "Baden im Meer in der Nähe",
+    "natureView": "Naturblick",
+    "pets": "Hundefreundlich",
+    "selfCheckIn": "Self-Check-in (Codeschloss)"
+  },
+  "location": {
+    "heading": "Hier wohnen Sie",
+    "body": "Das Haus liegt auf Flatön, einer ruhigen Insel, die über eine Brücke mit Orust an der Küste von Bohuslän verbunden ist — etwa 1,5 Stunden nördlich von Göteborg. Umgeben von glatten Felsen, Wald und offenem Wasser, mit mehreren Badeplätzen und dem Meer nur einen kurzen Spaziergang entfernt. Geschäfte und Restaurants erreichen Sie mit dem Auto in kurzer Zeit auf Orust.",
+    "openInMaps": "In Google Maps öffnen",
+    "coordinates": "Koordinaten",
+    "mapAlt": "Karte mit der Lage des Hauses auf Flatön, Bohuslän"
+  },
+  "availability": {
+    "heading": "Verfügbarkeit",
+    "subtitle": "Ausgegraute Daten sind bereits gebucht. Wählen Sie Ihre Nächte und senden Sie unten eine Anfrage.",
+    "available": "Verfügbar",
+    "booked": "Gebucht",
+    "selected": "Ihr Aufenthalt",
+    "loading": "Verfügbarkeit wird geladen…",
+    "error": "Der Kalender konnte gerade nicht geladen werden. Sie können trotzdem unten eine Anfrage senden."
+  },
+  "booking": {
+    "heading": "Buchungsanfrage senden",
+    "subtitle": "Senden Sie Ihre Wunschtermine und wir melden uns innerhalb von 48 Stunden zur Bestätigung. Es wird jetzt keine Zahlung fällig.",
+    "checkIn": "Anreise",
+    "checkOut": "Abreise",
+    "guests": "Gäste",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "phoneOptional": "Telefon (optional)",
+    "message": "Nachricht",
+    "messagePlaceholder": "Erzählen Sie uns etwas über Ihre Reise…",
+    "submit": "Anfrage senden",
+    "submitting": "Wird gesendet…",
+    "successTitle": "Anfrage gesendet!",
+    "successBody": "Vielen Dank – wir haben Ihre Anfrage erhalten und antworten innerhalb von 48 Stunden per E-Mail.",
+    "errorTitle": "Etwas ist schiefgelaufen",
+    "errorBody": "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
+    "notConfiguredTitle": "Buchungs-E-Mail noch nicht eingerichtet",
+    "notConfiguredBody": "Der Gastgeber hat noch keinen E-Mail-Anbieter verbunden. Bitte kontaktieren Sie uns über Airbnb oder die Kontakt-E-Mail im Footer.",
+    "nights": "{count, plural, =1 {# Nacht} other {# Nächte}}",
+    "estimatedTotal": "Geschätzte Gesamtsumme",
+    "priceNote": "Der Endpreis wird vom Gastgeber bestätigt.",
+    "validation": {
+      "datesRequired": "Bitte wählen Sie Anreise- und Abreisedatum.",
+      "checkoutAfter": "Die Abreise muss nach der Anreise liegen.",
+      "nameRequired": "Bitte geben Sie Ihren Namen ein.",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "guestsRange": "Bitte geben Sie eine gültige Gästezahl ein.",
+      "datesUnavailable": "Einige dieser Nächte sind bereits gebucht. Bitte wählen Sie andere Termine.",
+      "minNights": "Der Mindestaufenthalt beträgt {count} Nächte."
+    }
+  },
+  "faq": {
+    "heading": "Gut zu wissen",
+    "q1": "Wie buche ich?",
+    "a1": "Wählen Sie Ihre Termine und senden Sie eine Anfrage über das Formular. Wir bestätigen die Verfügbarkeit per E-Mail, meist innerhalb von 48 Stunden. Auf dieser Seite wird keine Zahlung fällig.",
+    "q2": "Wie funktioniert der Check-in?",
+    "a2": "Der Check-in erfolgt selbstständig über ein Codeschloss, sodass Sie zu einer für Sie passenden Zeit anreisen können; die Abreise ist bis 11 Uhr. Wir senden Ihnen den Türcode und die Anfahrt vor Ihrem Aufenthalt.",
+    "q3": "Darf ich meinen Hund mitbringen?",
+    "a3": "Auf jeden Fall – das Haus ist hundefreundlich. Sagen Sie uns einfach in Ihrer Anfrage Bescheid, dass Sie einen Hund mitbringen.",
+    "q4": "Wie komme ich dorthin?",
+    "a4": "Flatön liegt etwa 1,5 Autostunden nördlich von Göteborg und ist über eine Brücke von Orust aus erreichbar. Mit dem Auto erkunden Sie den Schärengarten am einfachsten, und am Haus gibt es kostenlose Parkplätze.",
+    "q5": "Ist das dasselbe wie Ihr Airbnb-Inserat?",
+    "a5": "Ja – es ist dasselbe Haus. Wenn Sie direkt hier buchen, erreichen Sie uns ohne Plattformgebühren. Selbstverständlich können Sie auch über Airbnb buchen, wenn Sie das bevorzugen."
+  },
+  "footer": {
+    "tagline": "Ein modernes Ferienhaus auf Flatön, Bohuslän.",
+    "contact": "Kontakt",
+    "viewOnAirbnb": "Auf Airbnb ansehen",
+    "rights": "Alle Rechte vorbehalten.",
+    "language": "Sprache"
+  },
+  "email": {
+    "guestSubject": "Wir haben Ihre Buchungsanfrage erhalten — {house}",
+    "guestGreeting": "Hallo {name},",
+    "guestIntro": "Vielen Dank für Ihre Anfrage für einen Aufenthalt im {house}. Wir haben die untenstehenden Angaben erhalten und antworten innerhalb von 48 Stunden zur Bestätigung der Verfügbarkeit. Es wurde keine Zahlung vorgenommen.",
+    "guestOutro": "Wir freuen uns darauf, Sie auf Flatön begrüßen zu dürfen!",
+    "ownerSubject": "Neue Buchungsanfrage: {checkIn} → {checkOut} ({guests} Gäste)",
+    "ownerIntro": "Sie haben eine neue direkte Buchungsanfrage von Ihrer Website:",
+    "labelDates": "Termine",
+    "labelNights": "Nächte",
+    "labelGuests": "Gäste",
+    "labelName": "Name",
+    "labelEmail": "E-Mail",
+    "labelPhone": "Telefon",
+    "labelMessage": "Nachricht",
+    "labelEstimate": "Geschätzte Gesamtsumme",
+    "labelLanguage": "Sprache des Gastes",
+    "signature": "— {house}"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "brand": "Flatön Coastal House",
+  "meta": {
+    "title": "Flatön Coastal House — modern holiday home in Bohuslän's archipelago",
+    "description": "A stylish modern holiday home on the island of Flatön in the heart of Bohuslän's archipelago, Sweden. Sleeps up to 8, dog-friendly, spacious terrace and sea swimming nearby. Book directly with the host."
+  },
+  "nav": {
+    "about": "The house",
+    "gallery": "Photos",
+    "amenities": "Amenities",
+    "location": "Location",
+    "availability": "Availability",
+    "book": "Request to book",
+    "bookNow": "Request to book"
+  },
+  "hero": {
+    "tagline": "A calm, stylish escape in Bohuslän's archipelago",
+    "subtitle": "A modern holiday home on the island of Flatön — spacious terrace, wood-burning fire and sea swimming just a short walk away. Perfect for families, friends and your dog.",
+    "cta": "Request to book",
+    "ctaSecondary": "View photos"
+  },
+  "about": {
+    "heading": "Welcome to the house",
+    "body": "Set on the island of Flatön in the heart of Bohuslän's archipelago, this modern home blends nature and comfort in a calm, scenic setting close to the sea. The upper floor opens into a bright, open-plan kitchen, living and dining area that leads out to a spacious terrace with a grill and a gas pizza oven. Inside there's a wood-burning fireplace, large windows full of light, air conditioning for warm days and a generous bathroom with a freestanding tub. Three bedrooms and extra sleeping options make it ideal for six guests, with room for up to eight. Sunny days on the terrace, swims in the sea and cosy evenings by the fire — and dogs are warmly welcome.",
+    "guests": "Guests",
+    "bedrooms": "Bedrooms",
+    "beds": "Beds",
+    "bathrooms": "Bathrooms",
+    "perNight": "per night",
+    "from": "from",
+    "minNights": "Minimum {count} nights"
+  },
+  "gallery": {
+    "heading": "A look around",
+    "captions": {
+      "exterior": "The black timber house at dusk",
+      "kitchen": "Modern open-plan kitchen",
+      "living": "Living room with wood-burning fire",
+      "terrace": "Terrace with outdoor dining",
+      "dining": "Dining area with a view",
+      "bathroom": "Bathroom with freestanding tub",
+      "fireplace": "Cosy fireplace with winter views",
+      "bedroom": "Restful double bedroom",
+      "bedroomSingle": "Bright single bedroom",
+      "kitchenDetail": "Kitchen details",
+      "sea": "The sea and jetty nearby"
+    }
+  },
+  "amenities": {
+    "heading": "What the house offers",
+    "wifi": "Wi-Fi",
+    "kitchen": "Fully equipped kitchen",
+    "pizzaOven": "Gas pizza oven",
+    "grill": "Barbecue grill",
+    "terrace": "Terrace & outdoor dining",
+    "fireplace": "Wood-burning fireplace",
+    "ac": "Air conditioning",
+    "heating": "Central heating",
+    "bathtub": "Bathtub & shower",
+    "washer": "Washing machine",
+    "tv": "TV",
+    "workspace": "Workspace",
+    "gym": "Exercise equipment",
+    "parking": "Free parking on site",
+    "seaNearby": "Sea swimming nearby",
+    "natureView": "Nature views",
+    "pets": "Dog-friendly",
+    "selfCheckIn": "Self check-in (keypad)"
+  },
+  "location": {
+    "heading": "Where you'll be",
+    "body": "The house sits on Flatön, a peaceful island linked by bridge to Orust on the Bohuslän coast — around 1.5 hours north of Gothenburg. You're surrounded by smooth granite, forest and open water, with several swimming spots and the sea just a short walk away. Shops and restaurants are a short drive on Orust.",
+    "openInMaps": "Open in Google Maps",
+    "coordinates": "Coordinates",
+    "mapAlt": "Map showing the location of the house on Flatön, Bohuslän"
+  },
+  "availability": {
+    "heading": "Availability",
+    "subtitle": "Greyed-out dates are already booked. Select your nights, then send a request below.",
+    "available": "Available",
+    "booked": "Booked",
+    "selected": "Your stay",
+    "loading": "Loading availability…",
+    "error": "Could not load the calendar right now. You can still send a request below."
+  },
+  "booking": {
+    "heading": "Request to book",
+    "subtitle": "Send your preferred dates and we'll get back to you within 48 hours to confirm. No payment is taken now.",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "phoneOptional": "Phone (optional)",
+    "message": "Message",
+    "messagePlaceholder": "Tell us a little about your trip…",
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "successTitle": "Request sent!",
+    "successBody": "Thank you — we've received your request and will reply by email within 48 hours.",
+    "errorTitle": "Something went wrong",
+    "errorBody": "Your request couldn't be sent. Please try again, or email us directly.",
+    "notConfiguredTitle": "Booking email not configured yet",
+    "notConfiguredBody": "The site owner hasn't connected an email provider yet. Please reach out via Airbnb or the contact email in the footer.",
+    "nights": "{count, plural, =1 {# night} other {# nights}}",
+    "estimatedTotal": "Estimated total",
+    "priceNote": "Final price confirmed by the host.",
+    "validation": {
+      "datesRequired": "Please select your check-in and check-out dates.",
+      "checkoutAfter": "Check-out must be after check-in.",
+      "nameRequired": "Please enter your name.",
+      "emailInvalid": "Please enter a valid email address.",
+      "guestsRange": "Please enter a valid number of guests.",
+      "datesUnavailable": "Some of those nights are already booked. Please choose other dates.",
+      "minNights": "The minimum stay is {count} nights."
+    }
+  },
+  "faq": {
+    "heading": "Good to know",
+    "q1": "How do I book?",
+    "a1": "Choose your dates and send a request through the form. We'll confirm availability by email, usually within 48 hours. No payment is taken on this site.",
+    "q2": "How does check-in work?",
+    "a2": "Check-in is self-service with a keypad code, so you can arrive at a time that suits you; check-out is by 11 am. We'll send the door code and directions before your stay.",
+    "q3": "Can I bring my dog?",
+    "a3": "Absolutely — the house is dog-friendly. Just let us know you're bringing a dog when you request your dates.",
+    "q4": "How do I get there?",
+    "a4": "Flatön is about a 1.5-hour drive north of Gothenburg, reached by bridge from Orust. A car is the easiest way to explore the archipelago, and there's free parking on site.",
+    "q5": "Is this the same as your Airbnb listing?",
+    "a5": "Yes — it's the same house. Booking directly here lets you reach us without platform fees. You're also welcome to book on Airbnb if you prefer."
+  },
+  "footer": {
+    "tagline": "A modern holiday home on Flatön, Bohuslän.",
+    "contact": "Contact",
+    "viewOnAirbnb": "View on Airbnb",
+    "rights": "All rights reserved.",
+    "language": "Language"
+  },
+  "email": {
+    "guestSubject": "We received your booking request — {house}",
+    "guestGreeting": "Hi {name},",
+    "guestIntro": "Thank you for your request to stay at {house}. We've received the details below and will reply within 48 hours to confirm availability. No payment has been taken.",
+    "guestOutro": "We look forward to welcoming you to Flatön!",
+    "ownerSubject": "New booking request: {checkIn} → {checkOut} ({guests} guests)",
+    "ownerIntro": "You have a new direct booking request from your website:",
+    "labelDates": "Dates",
+    "labelNights": "Nights",
+    "labelGuests": "Guests",
+    "labelName": "Name",
+    "labelEmail": "Email",
+    "labelPhone": "Phone",
+    "labelMessage": "Message",
+    "labelEstimate": "Estimated total",
+    "labelLanguage": "Guest language",
+    "signature": "— {house}"
+  }
+}
