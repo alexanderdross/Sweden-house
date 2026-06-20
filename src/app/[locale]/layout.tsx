@@ -6,7 +6,7 @@ import {
   getTranslations,
   setRequestLocale,
 } from "next-intl/server";
-import { routing, locales, defaultLocale, type Locale } from "@i18n/routing";
+import { routing, locales, type Locale } from "@i18n/routing";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -36,25 +36,16 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
 
-  // hreflang alternates so search engines serve the right language, plus an
-  // x-default pointing at the default locale.
-  const languages: Record<string, string> = Object.fromEntries(
-    locales.map((l) => [l, `${siteUrl}/${l}/`]),
-  );
-  languages["x-default"] = `${siteUrl}/${defaultLocale}/`;
-
   const title = t("title");
   const description = t("description");
 
+  // Note: canonical + hreflang alternates are set at the page level
+  // (src/app/[locale]/page.tsx) so they belong to the content page only.
   return {
     metadataBase: new URL(siteUrl),
     title,
     description,
     applicationName: "Flatön Coastal House",
-    alternates: {
-      canonical: `${siteUrl}/${locale}/`,
-      languages,
-    },
     openGraph: {
       title,
       description,
