@@ -73,7 +73,7 @@ export default function Availability({
         </p>
       )}
 
-      <div className="mt-4 rounded-2xl border border-sea-100 bg-white p-3 shadow-sm">
+      <div className="mt-4 flex justify-center rounded-2xl border border-sea-100 bg-white p-3 shadow-sm">
         {loading ? (
           <p className="px-2 py-10 text-center text-sm text-sea-500">
             {t("loading")}
@@ -95,7 +95,7 @@ export default function Availability({
         )}
       </div>
 
-      <ul className="mt-3 flex flex-wrap gap-4 text-xs text-sea-600">
+      <ul className="mt-3 flex flex-wrap justify-center gap-4 text-xs text-sea-600 sm:justify-start">
         <li className="flex items-center gap-1.5">
           <span className="inline-block h-3 w-3 rounded-sm border border-sea-300 bg-white" />
           {t("available")}
