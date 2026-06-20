@@ -32,6 +32,9 @@
   },
   "gallery": {
     "heading": "Et kig rundt",
+    "close": "Luk",
+    "previous": "Forrige",
+    "next": "Næste",
     "captions": {
       "exterior": "Det sorte træhus i skumringen",
       "kitchen": "Moderne køkken i åben plan",
@@ -77,6 +80,9 @@
   "availability": {
     "heading": "Ledige datoer",
     "subtitle": "Gråtonede datoer er allerede booket. Vælg dine nætter, og send en forespørgsel nedenfor.",
+    "refresh": "Opdater",
+    "syncedWithAirbnb": "Synkroniseret med Airbnb",
+    "updatedAt": "opdateret {time}",
     "available": "Ledigt",
     "booked": "Booket",
     "selected": "Dit ophold",

@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@i18n/routing";
-import { locales, localeNames, type Locale } from "@i18n/routing";
+import { locales, localeNames, localeFlags, type Locale } from "@i18n/routing";
 import { useTransition } from "react";
 
 export default function LanguageSwitcher() {
@@ -30,7 +30,7 @@ export default function LanguageSwitcher() {
       >
         {locales.map((l) => (
           <option key={l} value={l}>
-            {localeNames[l]}
+            {localeFlags[l]} {localeNames[l]}
           </option>
         ))}
       </select>

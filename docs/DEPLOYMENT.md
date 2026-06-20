@@ -57,7 +57,7 @@ those nights in the calendar and in server-side booking validation.
 
 ## Verifying a deployment
 
-- Visit `/` → should redirect to `/sv`; check `/en`, `/da`, `/fi`, `/de`.
+- Visit `/` → should redirect to `/en`; check `/sv`, `/da`, `/fi`, `/de`.
 - `GET /api/availability` → JSON `{ "ranges": [...] }` (non-empty once the iCal
   URL is set and there are Airbnb bookings).
 - Submit the booking form → owner email + guest acknowledgement arrive; an

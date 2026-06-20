@@ -10,10 +10,13 @@ Built with **Next.js (App Router) + TypeScript + Tailwind CSS**, deployed on
 
 ## Features
 
-- 🌍 **5 languages** — Swedish (default), English, Danish, Finnish, German, with
-  locale-prefixed URLs (`/sv`, `/en`, `/da`, `/fi`, `/de`) and `hreflang` SEO.
+- 🌍 **5 languages** — English (default), Swedish, Danish, Finnish, German, with
+  locale-prefixed URLs (`/en`, `/sv`, `/da`, `/fi`, `/de`), flag-marked language
+  switcher and `hreflang` SEO.
 - 📅 **Availability calendar** that imports the **Airbnb iCal feed** (one-way
-  sync) plus optional manual blocked dates.
+  sync) plus optional manual blocked dates, with a "synced with Airbnb" status
+  and a refresh button.
+- 🖼️ **Clickable photo lightbox** (keyboard + swipe-friendly) for full-size views.
 - ✉️ **Request-to-book form** that emails the host and sends the guest a
   localized acknowledgement via SMTP.
 - 🖼️ **Optimized images** — self-hosted WebP, static imports (no layout shift),
@@ -26,7 +29,9 @@ Built with **Next.js (App Router) + TypeScript + Tailwind CSS**, deployed on
 ```bash
 npm install
 cp .env.example .env.local   # then fill in the values you have
-npm run dev                  # http://localhost:3000  → redirects to /sv
+npm run dev                  # http://localhost:3000  → redirects to /en
+npm test                     # run the date/iCal unit tests
+npm run sync:check -- <ical-url-or-file>   # verify calendar matches Airbnb
 ```
 
 The site runs fine with no env vars set: the calendar simply shows only manual

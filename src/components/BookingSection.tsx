@@ -1,36 +1,57 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { type DateRange as RdpRange } from "react-day-picker";
 import { useTranslations } from "next-intl";
 import Availability from "./Availability";
 import BookingForm from "./BookingForm";
 import { expandBlockedNights, type DateRange } from "@/lib/dates";
 
+interface SyncState {
+  blockedNights: Set<string>;
+  updatedAt?: string;
+  airbnbSynced: boolean;
+}
+
 export default function BookingSection() {
   const t = useTranslations("booking");
   const [range, setRange] = useState<RdpRange | undefined>();
-  const [blockedNights, setBlockedNights] = useState<Set<string>>(new Set());
+  const [sync, setSync] = useState<SyncState>({
+    blockedNights: new Set(),
+    airbnbSynced: false,
+  });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  useEffect(() => {
-    let active = true;
-    fetch("/api/availability")
-      .then((res) => {
-        if (!res.ok) throw new Error("availability");
-        return res.json();
-      })
-      .then((data: { ranges: DateRange[] }) => {
-        if (!active) return;
-        setBlockedNights(expandBlockedNights(data.ranges));
-      })
-      .catch(() => active && setError(true))
-      .finally(() => active && setLoading(false));
-    return () => {
-      active = false;
-    };
+  const load = useCallback(async (force = false) => {
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch(
+        "/api/availability",
+        force ? { cache: "no-store" } : undefined,
+      );
+      if (!res.ok) throw new Error("availability");
+      const data: {
+        ranges: DateRange[];
+        updatedAt?: string;
+        airbnbSynced?: boolean;
+      } = await res.json();
+      setSync({
+        blockedNights: expandBlockedNights(data.ranges),
+        updatedAt: data.updatedAt,
+        airbnbSynced: Boolean(data.airbnbSynced),
+      });
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    load();
+  }, [load]);
 
   return (
     <section id="booking" className="bg-sea-950 py-20 text-white">
@@ -46,9 +67,12 @@ export default function BookingSection() {
           <Availability
             range={range}
             onSelect={setRange}
-            blockedNights={blockedNights}
+            blockedNights={sync.blockedNights}
             loading={loading}
             error={error}
+            airbnbSynced={sync.airbnbSynced}
+            updatedAt={sync.updatedAt}
+            onRefresh={() => load(true)}
           />
           <BookingForm range={range} />
         </div>
