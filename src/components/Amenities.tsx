@@ -34,12 +34,14 @@ export default function Amenities() {
         {property.amenities.map((key) => (
           <li
             key={key}
-            className="flex items-center gap-3 rounded-xl border border-sea-100 bg-white px-4 py-3 shadow-sm"
+            className="flex min-w-0 items-center gap-3 rounded-xl border border-sea-100 bg-white px-4 py-3 shadow-sm"
           >
-            <span className="text-2xl" aria-hidden="true">
+            <span className="shrink-0 text-2xl" aria-hidden="true">
               {ICONS[key]}
             </span>
-            <span className="font-medium text-sea-800">{t(key)}</span>
+            <span className="min-w-0 hyphens-auto break-words font-medium leading-tight text-sea-800">
+              {t(key)}
+            </span>
           </li>
         ))}
       </ul>
