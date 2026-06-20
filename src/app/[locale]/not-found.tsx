@@ -8,6 +8,7 @@ export default function NotFound() {
       <p className="font-serif text-6xl font-semibold text-sea-300">404</p>
       <Link
         href="/"
+        title={t("about")}
         className="mt-6 rounded-full bg-sea-700 px-6 py-3 font-semibold text-white transition hover:bg-sea-800"
       >
         {t("about")}

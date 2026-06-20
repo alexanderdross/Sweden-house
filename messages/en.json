@@ -1,7 +1,7 @@
 {
   "brand": "Flatön Coastal House",
   "meta": {
-    "title": "Flatön Coastal House — modern holiday home in Bohuslän's archipelago",
+    "title": "Flatön Coastal House, modern holiday home in Bohuslän's archipelago",
     "description": "A stylish modern holiday home on the island of Flatön in the heart of Bohuslän's archipelago, Sweden. Sleeps up to 8, dog-friendly, spacious terrace and sea swimming nearby. Book directly with the host."
   },
   "nav": {
@@ -9,19 +9,21 @@
     "gallery": "Photos",
     "amenities": "Amenities",
     "location": "Location",
+    "area": "Area",
     "availability": "Availability",
     "book": "Request to book",
-    "bookNow": "Request to book"
+    "bookNow": "Request to book",
+    "menu": "Menu"
   },
   "hero": {
     "tagline": "A calm, stylish escape in Bohuslän's archipelago",
-    "subtitle": "A modern holiday home on the island of Flatön — spacious terrace, wood-burning fire and sea swimming just a short walk away. Perfect for families, friends and your dog.",
+    "subtitle": "A modern holiday home on the island of Flatön, spacious terrace, wood-burning fire and sea swimming just a short walk away. Perfect for families, friends and your dog.",
     "cta": "Request to book",
     "ctaSecondary": "View photos"
   },
   "about": {
     "heading": "Welcome to the house",
-    "body": "Set on the island of Flatön in the heart of Bohuslän's archipelago, this modern home blends nature and comfort in a calm, scenic setting close to the sea. The upper floor opens into a bright, open-plan kitchen, living and dining area that leads out to a spacious terrace with a grill and a gas pizza oven. Inside there's a wood-burning fireplace, large windows full of light, air conditioning for warm days and a generous bathroom with a freestanding tub. Three bedrooms and extra sleeping options make it ideal for six guests, with room for up to eight. Sunny days on the terrace, swims in the sea and cosy evenings by the fire — and dogs are warmly welcome.",
+    "body": "Set on the island of Flatön in the heart of Bohuslän's archipelago, this modern home blends nature and comfort in a calm, scenic setting close to the sea. The upper floor opens into a bright, open-plan kitchen, living and dining area that leads out to a spacious terrace with a grill and a gas pizza oven. Inside there's a wood-burning fireplace, large windows full of light, air conditioning for warm days and a generous bathroom with a freestanding tub. Three bedrooms and extra sleeping options make it ideal for six guests, with room for up to eight. Sunny days on the terrace, swims in the sea and cosy evenings by the fire, and dogs are warmly welcome.",
     "guests": "Guests",
     "bedrooms": "Bedrooms",
     "beds": "Beds",
@@ -72,7 +74,7 @@
   },
   "location": {
     "heading": "Where you'll be",
-    "body": "The house sits on Flatön, a peaceful island linked by bridge to Orust on the Bohuslän coast — around 1.5 hours north of Gothenburg. You're surrounded by smooth granite, forest and open water, with several swimming spots and the sea just a short walk away. Shops and restaurants are a short drive on Orust.",
+    "body": "The house sits on Flatön, a peaceful island linked by bridge to Orust on the Bohuslän coast, around 1.5 hours north of Gothenburg. You're surrounded by smooth granite, forest and open water, with several swimming spots and the sea just a short walk away. Shops and restaurants are a short drive on Orust.",
     "openInMaps": "Open in Google Maps",
     "coordinates": "Coordinates",
     "mapAlt": "Map showing the location of the house on Flatön, Bohuslän"
@@ -104,7 +106,7 @@
     "submit": "Send request",
     "submitting": "Sending…",
     "successTitle": "Request sent!",
-    "successBody": "Thank you — we've received your request and will reply by email within 48 hours.",
+    "successBody": "Thank you, we've received your request and will reply by email within 48 hours.",
     "errorTitle": "Something went wrong",
     "errorBody": "Your request couldn't be sent. Please try again, or email us directly.",
     "notConfiguredTitle": "Booking email not configured yet",
@@ -124,16 +126,41 @@
   },
   "faq": {
     "heading": "Good to know",
+    "titleSuffix": "Flatön holiday house FAQ, Bohuslän",
     "q1": "How do I book?",
     "a1": "Choose your dates and send a request through the form. We'll confirm availability by email, usually within 48 hours. No payment is taken on this site.",
     "q2": "How does check-in work?",
     "a2": "Check-in is self-service with a keypad code, so you can arrive at a time that suits you; check-out is by 11 am. We'll send the door code and directions before your stay.",
     "q3": "Can I bring my dog?",
-    "a3": "Absolutely — the house is dog-friendly. Just let us know you're bringing a dog when you request your dates.",
+    "a3": "Absolutely, the house is dog-friendly. Just let us know you're bringing a dog when you request your dates.",
     "q4": "How do I get there?",
     "a4": "Flatön is about a 1.5-hour drive north of Gothenburg, reached by bridge from Orust. A car is the easiest way to explore the archipelago, and there's free parking on site.",
     "q5": "Is this the same as your Airbnb listing?",
-    "a5": "Yes — it's the same house. Booking directly here lets you reach us without platform fees. You're also welcome to book on Airbnb if you prefer."
+    "a5": "Yes, it's the same house. Booking directly here lets you reach us without platform fees. You're also welcome to book on Airbnb if you prefer.",
+    "q6": "What's included in the house?",
+    "a6": "Bed linen and towels are provided, along with a fully equipped kitchen, washing machine, free Wi-Fi, a workspace, TV, wood-burning fire and air conditioning. The terrace has a grill and a gas pizza oven.",
+    "q7": "Where can we swim nearby?",
+    "a7": "The sea and several swimming spots are just a short walk from the house. The smooth granite rocks and sheltered bays of the Bohuslän archipelago are perfect for swimming on warm days."
+  },
+  "area": {
+    "heading": "Explore Flatön & the Bohuslän archipelago",
+    "intro": "The house is your base for exploring Orust and the islands of Bohuslän, Sweden's stretch of smooth granite, sheltered bays and fishing villages on the west coast. Here are a few favourites within easy reach.",
+    "swim": {
+      "title": "Swimming & the sea",
+      "body": "Walk a few minutes to the water for a swim off the rocks, or seek out sheltered sandy coves around Flatön and Orust. Bring a kayak to explore the calm archipelago waters."
+    },
+    "nature": {
+      "title": "Hiking & nature",
+      "body": "Coastal trails wind across granite headlands and through pine and heather. Orust is one of Sweden's largest islands, with quiet roads, viewpoints and nature reserves to discover."
+    },
+    "villages": {
+      "title": "Coastal villages",
+      "body": "Visit the picturesque harbours of Ellös, Mollösund and Gullholmen, classic Bohuslän fishing villages with boutiques, galleries and ice cream by the quay."
+    },
+    "food": {
+      "title": "Seafood & local flavours",
+      "body": "The west coast is famous for shrimp, oysters and mussels. Pick up fresh seafood from local harbours, or fire up the pizza oven and grill on the terrace."
+    }
   },
   "footer": {
     "tagline": "A modern holiday home on Flatön, Bohuslän.",
@@ -143,7 +170,7 @@
     "language": "Language"
   },
   "email": {
-    "guestSubject": "We received your booking request — {house}",
+    "guestSubject": "We received your booking request, {house}",
     "guestGreeting": "Hi {name},",
     "guestIntro": "Thank you for your request to stay at {house}. We've received the details below and will reply within 48 hours to confirm availability. No payment has been taken.",
     "guestOutro": "We look forward to welcoming you to Flatön!",
@@ -158,6 +185,6 @@
     "labelMessage": "Message",
     "labelEstimate": "Estimated total",
     "labelLanguage": "Guest language",
-    "signature": "— {house}"
+    "signature": "{house}"
   }
 }

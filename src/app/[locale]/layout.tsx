@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import {
@@ -6,7 +6,7 @@ import {
   getTranslations,
   setRequestLocale,
 } from "next-intl/server";
-import { routing, locales, type Locale } from "@i18n/routing";
+import { routing, locales, defaultLocale, type Locale } from "@i18n/routing";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -14,6 +14,19 @@ export function generateStaticParams() {
 }
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+// Maps our short locale codes to og:locale values (language_REGION).
+const OG_LOCALE: Record<Locale, string> = {
+  en: "en_GB",
+  sv: "sv_SE",
+  da: "da_DK",
+  fi: "fi_FI",
+  de: "de_DE",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2a4d68",
+};
 
 export async function generateMetadata({
   params,
@@ -23,25 +36,44 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
 
-  // hreflang alternates so search engines serve the right language.
-  const languages = Object.fromEntries(
-    locales.map((l) => [l, `${siteUrl}/${l}`]),
+  // hreflang alternates so search engines serve the right language, plus an
+  // x-default pointing at the default locale.
+  const languages: Record<string, string> = Object.fromEntries(
+    locales.map((l) => [l, `${siteUrl}/${l}/`]),
   );
+  languages["x-default"] = `${siteUrl}/${defaultLocale}/`;
+
+  const title = t("title");
+  const description = t("description");
 
   return {
     metadataBase: new URL(siteUrl),
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
+    applicationName: "Flatön Coastal House",
     alternates: {
-      canonical: `${siteUrl}/${locale}`,
+      canonical: `${siteUrl}/${locale}/`,
       languages,
     },
     openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: `${siteUrl}/${locale}`,
+      title,
+      description,
+      url: `${siteUrl}/${locale}/`,
+      siteName: "Flatön Coastal House",
       type: "website",
-      images: ["/images/exterior.webp"],
+      locale: OG_LOCALE[locale as Locale],
+      alternateLocale: locales
+        .filter((l) => l !== locale)
+        .map((l) => OG_LOCALE[l]),
+      images: [
+        { url: "/og.jpg", width: 1200, height: 630, alt: title },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og.jpg"],
     },
   };
 }

@@ -1,7 +1,7 @@
 {
   "brand": "Huset på Flatön",
   "meta": {
-    "title": "Huset på Flatön — moderne feriehus i Bohusläns skærgård",
+    "title": "Huset på Flatön, moderne feriehus i Bohusläns skærgård",
     "description": "Et stilfuldt og moderne feriehus på øen Flatön i hjertet af Bohusläns skærgård, Sverige. Plads til op til 8 gæster, hundevenligt, rummelig terrasse og havbad i nærheden. Book direkte hos værten."
   },
   "nav": {
@@ -9,19 +9,21 @@
     "gallery": "Billeder",
     "amenities": "Faciliteter",
     "location": "Beliggenhed",
+    "area": "Området",
     "availability": "Ledige datoer",
     "book": "Send bookingforespørgsel",
-    "bookNow": "Book"
+    "bookNow": "Book",
+    "menu": "Menu"
   },
   "hero": {
     "tagline": "Et roligt og stilfuldt tilflugtssted i Bohusläns skærgård",
-    "subtitle": "Et moderne feriehus på øen Flatön — rummelig terrasse, brændeovn og havbad blot en kort gåtur væk. Perfekt for familier, venner og din hund.",
+    "subtitle": "Et moderne feriehus på øen Flatön, rummelig terrasse, brændeovn og havbad blot en kort gåtur væk. Perfekt for familier, venner og din hund.",
     "cta": "Send bookingforespørgsel",
     "ctaSecondary": "Se billeder"
   },
   "about": {
     "heading": "Velkommen til huset",
-    "body": "På øen Flatön, midt i Bohusläns skærgård, forener dette moderne hus natur og komfort i rolige, naturskønne omgivelser tæt på havet. Øverste etage åbner sig i et lyst køkken-, opholds- og spiseområde i åben plan med udgang til en rummelig terrasse med grill og en gasdrevet pizzaovn. Indenfor er der brændeovn, store vinduer fyldt med lys, aircondition til varme dage og et stort badeværelse med fritstående badekar. Tre soveværelser og ekstra sovepladser gør huset ideelt til seks gæster, med plads til op til otte. Solrige dage på terrassen, bad i havet og hyggelige aftener ved pejsen — og hunde er hjerteligt velkomne.",
+    "body": "På øen Flatön, midt i Bohusläns skærgård, forener dette moderne hus natur og komfort i rolige, naturskønne omgivelser tæt på havet. Øverste etage åbner sig i et lyst køkken-, opholds- og spiseområde i åben plan med udgang til en rummelig terrasse med grill og en gasdrevet pizzaovn. Indenfor er der brændeovn, store vinduer fyldt med lys, aircondition til varme dage og et stort badeværelse med fritstående badekar. Tre soveværelser og ekstra sovepladser gør huset ideelt til seks gæster, med plads til op til otte. Solrige dage på terrassen, bad i havet og hyggelige aftener ved pejsen, og hunde er hjerteligt velkomne.",
     "guests": "Gæster",
     "bedrooms": "Soveværelser",
     "beds": "Senge",
@@ -72,7 +74,7 @@
   },
   "location": {
     "heading": "Her bor du",
-    "body": "Huset ligger på Flatön, en fredelig ø forbundet med Orust via bro på Bohusläns kyst — omkring 1,5 time nord for Göteborg. Du er omgivet af glatte klipper, skov og åbent vand, med flere badesteder og havet blot en kort gåtur væk. Butikker og restauranter ligger en kort køretur væk på Orust.",
+    "body": "Huset ligger på Flatön, en fredelig ø forbundet med Orust via bro på Bohusläns kyst, omkring 1,5 time nord for Göteborg. Du er omgivet af glatte klipper, skov og åbent vand, med flere badesteder og havet blot en kort gåtur væk. Butikker og restauranter ligger en kort køretur væk på Orust.",
     "openInMaps": "Åbn i Google Maps",
     "coordinates": "Koordinater",
     "mapAlt": "Kort der viser husets beliggenhed på Flatön, Bohuslän"
@@ -124,6 +126,7 @@
   },
   "faq": {
     "heading": "Godt at vide",
+    "titleSuffix": "Ofte stillede spørgsmål om feriehuset på Flatön, Bohuslän",
     "q1": "Hvordan booker jeg?",
     "a1": "Vælg dine datoer, og send en forespørgsel via formularen. Vi bekræfter ledighed via e-mail, normalt inden for 48 timer. Der opkræves ingen betaling på denne side.",
     "q2": "Hvordan foregår check-in?",
@@ -133,7 +136,31 @@
     "q4": "Hvordan kommer jeg dertil?",
     "a4": "Flatön ligger cirka 1,5 times kørsel nord for Göteborg og nås via bro fra Orust. Bil er den nemmeste måde at udforske skærgården på, og der er gratis parkering på grunden.",
     "q5": "Er det det samme som jeres Airbnb-opslag?",
-    "a5": "Ja – det er det samme hus. Når du booker direkte her, når du os uden platformsgebyrer. Du er naturligvis også velkommen til at booke via Airbnb, hvis du foretrækker det."
+    "a5": "Ja – det er det samme hus. Når du booker direkte her, når du os uden platformsgebyrer. Du er naturligvis også velkommen til at booke via Airbnb, hvis du foretrækker det.",
+    "q6": "Hvad er inkluderet i huset?",
+    "a6": "Sengetøj og håndklæder er inkluderet, sammen med et fuldt udstyret køkken, vaskemaskine, gratis Wi-Fi, en arbejdsplads, TV, brændeovn og aircondition. Terrassen har grill og en gasdrevet pizzaovn.",
+    "q7": "Hvor kan vi bade i nærheden?",
+    "a7": "Havet og flere badesteder ligger blot en kort gåtur fra huset. Bohusläns glatte klipper og beskyttede bugter er perfekte til badning på varme dage."
+  },
+  "area": {
+    "heading": "Oplev Flatön og Bohusläns skærgård",
+    "intro": "Huset er din base for at udforske Orust og Bohusläns øer – Sveriges vestkyst med glatte klipper, beskyttede bugter og fiskerlejer. Her er nogle favoritter inden for rækkevidde.",
+    "swim": {
+      "title": "Badning og hav",
+      "body": "Gå et par minutter til vandet for en dukkert fra klipperne, eller find beskyttede sandbugter omkring Flatön og Orust. Tag en kajak med og udforsk skærgårdens rolige vande."
+    },
+    "nature": {
+      "title": "Vandring og natur",
+      "body": "Kyststier snor sig over klippeknolde og gennem fyr og lyng. Orust er en af Sveriges største øer med rolige veje, udsigtspunkter og naturreservater at opdage."
+    },
+    "villages": {
+      "title": "Kystbyer",
+      "body": "Besøg de pittoreske havne i Ellös, Mollösund og Gullholmen – klassiske bohuslänske fiskerlejer med butikker, gallerier og is ved kajen."
+    },
+    "food": {
+      "title": "Skaldyr og lokale smage",
+      "body": "Vestkysten er kendt for rejer, østers og muslinger. Køb friske skaldyr i de lokale havne, eller tænd op i pizzaovnen og grillen på terrassen."
+    }
   },
   "footer": {
     "tagline": "Et moderne feriehus på Flatön, Bohuslän.",
@@ -143,7 +170,7 @@
     "language": "Sprog"
   },
   "email": {
-    "guestSubject": "Vi har modtaget din bookingforespørgsel — {house}",
+    "guestSubject": "Vi har modtaget din bookingforespørgsel, {house}",
     "guestGreeting": "Hej {name},",
     "guestIntro": "Tak for din forespørgsel om at bo i {house}. Vi har modtaget oplysningerne nedenfor og svarer inden for 48 timer for at bekræfte ledigheden. Der er ikke opkrævet nogen betaling.",
     "guestOutro": "Vi glæder os til at byde dig velkommen til Flatön!",
@@ -158,6 +185,6 @@
     "labelMessage": "Besked",
     "labelEstimate": "Anslået i alt",
     "labelLanguage": "Gæstens sprog",
-    "signature": "— {house}"
+    "signature": "{house}"
   }
 }

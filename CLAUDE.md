@@ -20,13 +20,13 @@ npm run dev        # dev server at http://localhost:3000 (redirects to /en)
 npm run build      # production build (run this to verify before committing)
 npm run start      # serve the production build
 npm run lint       # eslint
-npm test           # node:test via tsx — date math + Airbnb iCal parsing
+npm test           # node:test via tsx, date math + Airbnb iCal parsing
 npm run sync:check -- <ical-url-or-file>   # print blocked dates the site sees
 ```
 
 **Verify changes with `npm run build` + `npm test`** and a manual smoke test of
 `/en`, `/sv`, `/da`, `/fi`, `/de`, `/api/availability`, and a POST to
-`/api/booking-request`. The iCal date handling is timezone-sensitive — run
+`/api/booking-request`. The iCal date handling is timezone-sensitive, run
 `TZ=Europe/Stockholm npm test` too.
 
 ## Architecture (one-paragraph map)
@@ -53,17 +53,27 @@ re-checks availability, and sends localized SMTP emails via `src/lib/email.ts`.
 - **Dates** are timezone-safe `YYYY-MM-DD` strings everywhere; helpers in
   `src/lib/dates.ts`. iCal/booking ranges use an **exclusive check-out** date
   (hotel-night convention). node-ical builds all-day events at LOCAL midnight
-  and `toISODate` reads local components — keep it that way; switching to UTC
+  and `toISODate` reads local components, keep it that way; switching to UTC
   getters reintroduces an off-by-one in zones behind UTC (covered by tests).
 - **Images**: self-hosted WebP in `public/images/`, imported statically in
   `content/gallery.ts` (gives automatic dimensions + blur placeholder). Use
   `next/image` with `placeholder="blur"` and a `sizes` prop; only the hero is
   `priority`. Alt text is always localized via `gallery.captions.*`.
-- **Secrets never in code** — all SMTP/iCal config is env-only. The app builds
+- **Secrets never in code**, all SMTP/iCal config is env-only. The app builds
   and runs with no env vars (form returns a friendly "not configured" notice,
   calendar shows only manual blocks).
 - Keep all user-facing strings in `messages/<locale>.json`; never hard-code
   copy in components.
+- **No em-dashes (—) anywhere** in copy, code, or docs (house style). Use
+  commas/colons; en-dashes (–) in Scandinavian text are fine.
+- **Trailing slashes** are canonical (`trailingSlash: true`). Any hand-built URL
+  (canonical, hreflang, sitemap, JSON-LD) must end in `/`. Root `/` redirects to
+  `/en/`.
+- **SEO essentials**: `src/app/sitemap.ts`, `robots.ts`, `manifest.ts`; per-page
+  JSON-LD in `src/components/JsonLd.tsx` (LodgingBusiness/VacationRental +
+  FAQPage); `x-default` hreflang + OG/Twitter in the `[locale]` layout. Every
+  `<a>` carries an SEO `title`. FAQ accordions deep-link via `#faq-<slug>`
+  (`content/faq.ts`).
 
 ## Where to change things
 
@@ -72,6 +82,9 @@ re-checks availability, and sends localized SMTP emails via `src/lib/email.ts`.
 | Capacity, price, min nights, coords, links, amenities, blocked dates | `content/property.ts` |
 | Photos / gallery order | `content/gallery.ts` (+ files in `public/images/`) |
 | Any text, in any language | `messages/<locale>.json` |
+| FAQ questions / deep-link slugs | `content/faq.ts` + `faq.*` in messages |
+| Area guide / local content | `area.*` in messages (`AreaGuide.tsx`) |
+| Structured data / SEO metadata | `JsonLd.tsx`, `[locale]/layout.tsx`, `sitemap.ts`, `robots.ts`, `manifest.ts` |
 | Add a language | `i18n/routing.ts` (`locales`, `localeNames`) + new `messages/<x>.json` + middleware matcher |
 | Availability / Airbnb sync logic | `src/lib/ical.ts`, `src/lib/availability.ts`, `src/app/api/availability/route.ts` |
 | Tests | `test/*.test.ts` (run via `npm test`) |
@@ -91,7 +104,7 @@ re-checks availability, and sends localized SMTP emails via `src/lib/email.ts`.
 
 ## More docs
 
-- [`README.md`](./README.md) — setup & deploy quickstart
-- [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — detailed architecture
-- [`docs/CONTENT-GUIDE.md`](./docs/CONTENT-GUIDE.md) — editing content, photos, languages
-- [`docs/DEPLOYMENT.md`](./docs/DEPLOYMENT.md) — Vercel, env vars, Airbnb iCal
+- [`README.md`](./README.md), setup & deploy quickstart
+- [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md), detailed architecture
+- [`docs/CONTENT-GUIDE.md`](./docs/CONTENT-GUIDE.md), editing content, photos, languages
+- [`docs/DEPLOYMENT.md`](./docs/DEPLOYMENT.md), Vercel, env vars, Airbnb iCal

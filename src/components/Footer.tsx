@@ -21,6 +21,7 @@ export default function Footer() {
           </h3>
           <a
             href={`mailto:${property.contactEmail}`}
+            title={`${tf("contact")}: ${property.contactEmail}`}
             className="mt-2 block text-sea-700 hover:text-sea-900"
           >
             {property.contactEmail}
@@ -31,6 +32,7 @@ export default function Footer() {
             href={property.airbnbUrl}
             target="_blank"
             rel="noopener noreferrer"
+            title={`${tf("viewOnAirbnb")}, ${t("brand")}`}
             className="inline-flex items-center gap-2 rounded-full border border-sea-200 px-4 py-2 text-sm font-medium text-sea-700 transition hover:border-sea-400 hover:text-sea-900"
           >
             {tf("viewOnAirbnb")}

@@ -4,7 +4,7 @@
 
 1. Push this repository to GitHub.
 2. In Vercel, **Add New → Project** and import the repo. Framework is
-   auto-detected as **Next.js** — no build settings needed.
+   auto-detected as **Next.js**, no build settings needed.
 3. Add the environment variables below (**Settings → Environment Variables**),
    for the Production (and Preview) environments.
 4. **Deploy.**

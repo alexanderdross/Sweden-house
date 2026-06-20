@@ -54,7 +54,7 @@ export interface Property {
   amenities: AmenityKey[];
   /**
    * Dates the owner wants to block manually, on top of the Airbnb iCal feed.
-   * Use ISO ranges (inclusive start, exclusive end — like hotel nights).
+   * Use ISO ranges (inclusive start, exclusive end, like hotel nights).
    */
   manualBlockedRanges: { start: string; end: string }[];
   /** Public contact details shown in the footer. */
@@ -74,7 +74,7 @@ export const property: Property = {
   currency: "SEK",
   minNights: 2,
   coordinates: { lat: 58.2147, lng: 11.493861 },
-  area: "Flatön, Orust — Bohuslän, Sweden",
+  area: "Flatön, Orust, Bohuslän, Sweden",
   googleMapsUrl: "https://goo.gl/maps/M34vSaGaJzbz5EU36",
   airbnbUrl:
     "https://www.airbnb.de/rooms/956609902841163645?unique_share_id=186e9b77-fe80-4103-8d39-aa56807588a7",

@@ -29,12 +29,14 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#booking"
+              title={`${t("cta")}: Flatön, Bohuslän`}
               className="rounded-full bg-white px-6 py-3 text-base font-semibold text-sea-900 shadow-md transition hover:bg-sand-100"
             >
               {t("cta")}
             </a>
             <a
               href="#gallery"
+              title={t("ctaSecondary")}
               className="rounded-full border border-white/70 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/10"
             >
               {t("ctaSecondary")}

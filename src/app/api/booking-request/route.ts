@@ -90,12 +90,12 @@ export async function POST(request: Request) {
     `${tEmail("labelGuests")}: ${data.guests}`,
     `${tEmail("labelName")}: ${data.name}`,
     `${tEmail("labelEmail")}: ${data.email}`,
-    `${tEmail("labelPhone")}: ${data.phone || "—"}`,
+    `${tEmail("labelPhone")}: ${data.phone || "–"}`,
     `${tEmail("labelEstimate")}: ${estimate}`,
     `${tEmail("labelLanguage")}: ${data.locale}`,
     "",
     `${tEmail("labelMessage")}:`,
-    data.message || "—",
+    data.message || "–",
   ];
 
   // ---- Guest acknowledgement ----

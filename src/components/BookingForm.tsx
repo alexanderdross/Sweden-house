@@ -108,13 +108,13 @@ export default function BookingForm({ range }: { range: RdpRange | undefined }) 
           <span className="block text-xs uppercase tracking-wide text-sea-500">
             {t("checkIn")}
           </span>
-          <span className="font-medium text-sea-900">{checkIn ?? "—"}</span>
+          <span className="font-medium text-sea-900">{checkIn ?? "–"}</span>
         </div>
         <div className="rounded-lg border border-sea-100 bg-sand-50 px-3 py-2">
           <span className="block text-xs uppercase tracking-wide text-sea-500">
             {t("checkOut")}
           </span>
-          <span className="font-medium text-sea-900">{checkOut ?? "—"}</span>
+          <span className="font-medium text-sea-900">{checkOut ?? "–"}</span>
         </div>
       </div>
 

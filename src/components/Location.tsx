@@ -26,12 +26,15 @@ export default function Location() {
               <dt className="text-sm uppercase tracking-wide text-sea-500">
                 {t("coordinates")}
               </dt>
-              <dd className="font-mono text-sea-900">{coordLabel}</dd>
+              <dd className="break-words font-mono text-sea-900">
+                {coordLabel}
+              </dd>
             </dl>
             <a
               href={property.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
+              title={`${t("openInMaps")}: Flatön, Orust, Bohuslän`}
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-sea-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-sea-800"
             >
               {t("openInMaps")}
