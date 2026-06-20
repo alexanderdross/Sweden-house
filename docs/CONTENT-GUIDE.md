@@ -14,7 +14,7 @@ Edit **`content/property.ts`**:
 | `bedrooms`, `beds`, `bathrooms` | Shown in the "facts" grid |
 | `pricePerNight`, `currency` | Set a real number to show "from X / night". Leave `0` to hide price and show only the minimum-nights note |
 | `minNights` | Minimum stay; enforced in the form and API |
-| `coordinates` | `{ lat, lng }` — drives the map and Maps link |
+| `coordinates` | `{ lat, lng }`, drives the map and Maps link |
 | `googleMapsUrl`, `airbnbUrl` | Buttons in Location / Footer |
 | `amenities` | Array of amenity keys (see below) |
 | `manualBlockedRanges` | Extra blocked dates on top of Airbnb. `{ start, end }`, `end` exclusive |
@@ -56,15 +56,15 @@ The first gallery entry is the large hero / Open Graph image
 
 ## 3. Text (any language)
 
-All copy lives in **`messages/<locale>.json`** — one file per language
+All copy lives in **`messages/<locale>.json`**, one file per language
 (`sv`, `en`, `da`, `fi`, `de`). The files share the same key structure; change
 the same key in each language. Key groups:
 
-- `brand`, `meta` — site name + SEO title/description
+- `brand`, `meta`, site name + SEO title/description
 - `nav`, `hero`, `about`, `gallery.captions`, `amenities`, `location`, `faq`,
   `footer`
-- `booking` — form labels, validation, success/error states
-- `email` — owner notification + guest acknowledgement text
+- `booking`, form labels, validation, success/error states
+- `email`, owner notification + guest acknowledgement text
 
 Placeholders like `{count}`, `{name}`, `{house}`, `{checkIn}` must be kept
 intact. Plurals use ICU syntax, e.g.

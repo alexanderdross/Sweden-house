@@ -13,7 +13,7 @@ export interface AvailabilityResult {
 
 /**
  * Build the list of unavailable date ranges by combining:
- *   1. The Airbnb iCal feed (if AIRBNB_ICAL_URL is set) — one-way sync.
+ *   1. The Airbnb iCal feed (if AIRBNB_ICAL_URL is set), one-way sync.
  *   2. Manual blocked ranges configured in content/property.ts.
  *
  * A missing or failing Airbnb feed degrades gracefully to manual ranges only,

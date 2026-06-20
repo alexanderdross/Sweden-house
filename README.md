@@ -1,8 +1,8 @@
-# Flatön Coastal House — direct booking website
+# Flatön Coastal House, direct booking website
 
 A multilingual landing page for a weekend house on **Flatön, Orust** in
 Bohuslän's archipelago, Sweden. Guests can browse the house, check availability
-(synced one-way from Airbnb) and **request a booking by email** — no platform
+(synced one-way from Airbnb) and **request a booking by email**, no platform
 fees, no online payment.
 
 Built with **Next.js (App Router) + TypeScript + Tailwind CSS**, deployed on
@@ -10,16 +10,20 @@ Built with **Next.js (App Router) + TypeScript + Tailwind CSS**, deployed on
 
 ## Features
 
-- 🌍 **5 languages** — English (default), Swedish, Danish, Finnish, German, with
+- 🌍 **5 languages**, English (default), Swedish, Danish, Finnish, German, with
   locale-prefixed URLs (`/en`, `/sv`, `/da`, `/fi`, `/de`), flag-marked language
   switcher and `hreflang` SEO.
 - 📅 **Availability calendar** that imports the **Airbnb iCal feed** (one-way
   sync) plus optional manual blocked dates, with a "synced with Airbnb" status
   and a refresh button.
 - 🖼️ **Clickable photo lightbox** (keyboard + swipe-friendly) for full-size views.
+- 🔎 **SEO-ready**: sitemap, robots, `x-default` hreflang, trailing-slash
+  canonicals, Open Graph + Twitter cards, JSON-LD (VacationRental + FAQPage),
+  per-link `title` attributes, and a unique local "Area guide" section.
+- 📱 **Mobile-first**: hamburger nav, swipeable gallery, theme-color, PWA manifest.
 - ✉️ **Request-to-book form** that emails the host and sends the guest a
   localized acknowledgement via SMTP.
-- 🖼️ **Optimized images** — self-hosted WebP, static imports (no layout shift),
+- 🖼️ **Optimized images**, self-hosted WebP, static imports (no layout shift),
   blur placeholders, lazy loading, localized `alt` text.
 - 🐶 Content tailored to the real listing (sleeps up to 8, dog-friendly,
   terrace with gas pizza oven, wood-burning fire, sea swimming nearby).
@@ -62,14 +66,14 @@ re-reads it at most once an hour.
 
 ## Editing content
 
-Everything the owner is likely to change lives in two places — no need to touch
+Everything the owner is likely to change lives in two places, no need to touch
 components:
 
-- **`content/property.ts`** — capacity, bedrooms, price, currency, minimum
+- **`content/property.ts`**, capacity, bedrooms, price, currency, minimum
   nights, coordinates, Airbnb/Maps links, amenities, manual blocked dates,
   contact email. Set `pricePerNight` to a real number to show a "from … / night"
   price (it's `0` by default, which shows "minimum nights" only).
-- **`messages/<locale>.json`** — all text in each language (headings,
+- **`messages/<locale>.json`**, all text in each language (headings,
   descriptions, FAQ, amenity labels, photo captions/alt text, emails).
 
 ### Replacing photos

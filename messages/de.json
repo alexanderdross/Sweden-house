@@ -1,7 +1,7 @@
 {
   "brand": "Haus auf Flatön",
   "meta": {
-    "title": "Haus auf Flatön — modernes Ferienhaus in Bohusläns Schärengarten",
+    "title": "Haus auf Flatön, modernes Ferienhaus in Bohusläns Schärengarten",
     "description": "Ein stilvolles, modernes Ferienhaus auf der Insel Flatön im Herzen des Schärengartens von Bohuslän, Schweden. Platz für bis zu 8 Gäste, hundefreundlich, großzügige Terrasse und Baden im Meer ganz in der Nähe. Direkt beim Gastgeber buchen."
   },
   "nav": {
@@ -9,19 +9,21 @@
     "gallery": "Fotos",
     "amenities": "Ausstattung",
     "location": "Lage",
+    "area": "Umgebung",
     "availability": "Verfügbarkeit",
     "book": "Buchungsanfrage senden",
-    "bookNow": "Buchen"
+    "bookNow": "Buchen",
+    "menu": "Menü"
   },
   "hero": {
     "tagline": "Ein ruhiger, stilvoller Rückzugsort im Schärengarten von Bohuslän",
-    "subtitle": "Ein modernes Ferienhaus auf der Insel Flatön — großzügige Terrasse, Kaminfeuer und Baden im Meer nur einen kurzen Spaziergang entfernt. Perfekt für Familien, Freunde und Ihren Hund.",
+    "subtitle": "Ein modernes Ferienhaus auf der Insel Flatön, großzügige Terrasse, Kaminfeuer und Baden im Meer nur einen kurzen Spaziergang entfernt. Perfekt für Familien, Freunde und Ihren Hund.",
     "cta": "Buchungsanfrage senden",
     "ctaSecondary": "Fotos ansehen"
   },
   "about": {
     "heading": "Willkommen im Haus",
-    "body": "Auf der Insel Flatön im Herzen des Schärengartens von Bohuslän verbindet dieses moderne Haus Natur und Komfort in einer ruhigen, malerischen Umgebung nahe am Meer. Das Obergeschoss öffnet sich zu einem hellen, offenen Wohn-, Ess- und Küchenbereich mit Zugang zu einer großzügigen Terrasse mit Grill und gasbetriebenem Pizzaofen. Im Inneren gibt es einen Kamin, große Fenster voller Licht, eine Klimaanlage für warme Tage und ein großzügiges Badezimmer mit freistehender Wanne. Drei Schlafzimmer und zusätzliche Schlafmöglichkeiten machen das Haus ideal für sechs Gäste, mit Platz für bis zu acht. Sonnige Tage auf der Terrasse, Bäder im Meer und gemütliche Abende am Kamin — und Hunde sind herzlich willkommen.",
+    "body": "Auf der Insel Flatön im Herzen des Schärengartens von Bohuslän verbindet dieses moderne Haus Natur und Komfort in einer ruhigen, malerischen Umgebung nahe am Meer. Das Obergeschoss öffnet sich zu einem hellen, offenen Wohn-, Ess- und Küchenbereich mit Zugang zu einer großzügigen Terrasse mit Grill und gasbetriebenem Pizzaofen. Im Inneren gibt es einen Kamin, große Fenster voller Licht, eine Klimaanlage für warme Tage und ein großzügiges Badezimmer mit freistehender Wanne. Drei Schlafzimmer und zusätzliche Schlafmöglichkeiten machen das Haus ideal für sechs Gäste, mit Platz für bis zu acht. Sonnige Tage auf der Terrasse, Bäder im Meer und gemütliche Abende am Kamin, und Hunde sind herzlich willkommen.",
     "guests": "Gäste",
     "bedrooms": "Schlafzimmer",
     "beds": "Betten",
@@ -72,7 +74,7 @@
   },
   "location": {
     "heading": "Hier wohnen Sie",
-    "body": "Das Haus liegt auf Flatön, einer ruhigen Insel, die über eine Brücke mit Orust an der Küste von Bohuslän verbunden ist — etwa 1,5 Stunden nördlich von Göteborg. Umgeben von glatten Felsen, Wald und offenem Wasser, mit mehreren Badeplätzen und dem Meer nur einen kurzen Spaziergang entfernt. Geschäfte und Restaurants erreichen Sie mit dem Auto in kurzer Zeit auf Orust.",
+    "body": "Das Haus liegt auf Flatön, einer ruhigen Insel, die über eine Brücke mit Orust an der Küste von Bohuslän verbunden ist, etwa 1,5 Stunden nördlich von Göteborg. Umgeben von glatten Felsen, Wald und offenem Wasser, mit mehreren Badeplätzen und dem Meer nur einen kurzen Spaziergang entfernt. Geschäfte und Restaurants erreichen Sie mit dem Auto in kurzer Zeit auf Orust.",
     "openInMaps": "In Google Maps öffnen",
     "coordinates": "Koordinaten",
     "mapAlt": "Karte mit der Lage des Hauses auf Flatön, Bohuslän"
@@ -124,6 +126,7 @@
   },
   "faq": {
     "heading": "Gut zu wissen",
+    "titleSuffix": "Häufige Fragen zum Ferienhaus auf Flatön, Bohuslän",
     "q1": "Wie buche ich?",
     "a1": "Wählen Sie Ihre Termine und senden Sie eine Anfrage über das Formular. Wir bestätigen die Verfügbarkeit per E-Mail, meist innerhalb von 48 Stunden. Auf dieser Seite wird keine Zahlung fällig.",
     "q2": "Wie funktioniert der Check-in?",
@@ -133,7 +136,31 @@
     "q4": "Wie komme ich dorthin?",
     "a4": "Flatön liegt etwa 1,5 Autostunden nördlich von Göteborg und ist über eine Brücke von Orust aus erreichbar. Mit dem Auto erkunden Sie den Schärengarten am einfachsten, und am Haus gibt es kostenlose Parkplätze.",
     "q5": "Ist das dasselbe wie Ihr Airbnb-Inserat?",
-    "a5": "Ja – es ist dasselbe Haus. Wenn Sie direkt hier buchen, erreichen Sie uns ohne Plattformgebühren. Selbstverständlich können Sie auch über Airbnb buchen, wenn Sie das bevorzugen."
+    "a5": "Ja – es ist dasselbe Haus. Wenn Sie direkt hier buchen, erreichen Sie uns ohne Plattformgebühren. Selbstverständlich können Sie auch über Airbnb buchen, wenn Sie das bevorzugen.",
+    "q6": "Was ist im Haus enthalten?",
+    "a6": "Bettwäsche und Handtücher sind inklusive, ebenso eine voll ausgestattete Küche, Waschmaschine, kostenloses WLAN, ein Arbeitsplatz, TV, Kamin und Klimaanlage. Auf der Terrasse gibt es einen Grill und einen gasbetriebenen Pizzaofen.",
+    "q7": "Wo können wir in der Nähe baden?",
+    "a7": "Das Meer und mehrere Badeplätze sind nur einen kurzen Spaziergang vom Haus entfernt. Die glatten Granitfelsen und geschützten Buchten des Schärengartens von Bohuslän sind an warmen Tagen perfekt zum Baden."
+  },
+  "area": {
+    "heading": "Entdecken Sie Flatön und den Schärengarten von Bohuslän",
+    "intro": "Das Haus ist Ihr Ausgangspunkt, um Orust und die Inseln von Bohuslän zu erkunden – Schwedens Westküste mit glatten Felsen, geschützten Buchten und Fischerdörfern. Hier ein paar Favoriten in Reichweite.",
+    "swim": {
+      "title": "Baden & Meer",
+      "body": "Gehen Sie ein paar Minuten zum Wasser für ein Bad von den Felsen, oder suchen Sie geschützte Sandbuchten rund um Flatön und Orust. Nehmen Sie ein Kajak mit und erkunden Sie die ruhigen Gewässer des Schärengartens."
+    },
+    "nature": {
+      "title": "Wandern & Natur",
+      "body": "Küstenwege schlängeln sich über Granitkuppen und durch Kiefern und Heide. Orust ist eine der größten Inseln Schwedens, mit ruhigen Straßen, Aussichtspunkten und Naturreservaten."
+    },
+    "villages": {
+      "title": "Küstendörfer",
+      "body": "Besuchen Sie die malerischen Häfen von Ellös, Mollösund und Gullholmen – klassische Fischerdörfer in Bohuslän mit Boutiquen, Galerien und Eis am Kai."
+    },
+    "food": {
+      "title": "Meeresfrüchte & lokale Aromen",
+      "body": "Die Westküste ist berühmt für Garnelen, Austern und Muscheln. Holen Sie frische Meeresfrüchte aus den lokalen Häfen oder heizen Sie den Pizzaofen und Grill auf der Terrasse an."
+    }
   },
   "footer": {
     "tagline": "Ein modernes Ferienhaus auf Flatön, Bohuslän.",
@@ -143,7 +170,7 @@
     "language": "Sprache"
   },
   "email": {
-    "guestSubject": "Wir haben Ihre Buchungsanfrage erhalten — {house}",
+    "guestSubject": "Wir haben Ihre Buchungsanfrage erhalten, {house}",
     "guestGreeting": "Hallo {name},",
     "guestIntro": "Vielen Dank für Ihre Anfrage für einen Aufenthalt im {house}. Wir haben die untenstehenden Angaben erhalten und antworten innerhalb von 48 Stunden zur Bestätigung der Verfügbarkeit. Es wurde keine Zahlung vorgenommen.",
     "guestOutro": "Wir freuen uns darauf, Sie auf Flatön begrüßen zu dürfen!",
@@ -158,6 +185,6 @@
     "labelMessage": "Nachricht",
     "labelEstimate": "Geschätzte Gesamtsumme",
     "labelLanguage": "Sprache des Gastes",
-    "signature": "— {house}"
+    "signature": "{house}"
   }
 }

@@ -9,6 +9,8 @@ export default function Gallery() {
   const t = useTranslations("gallery");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const [touchX, setTouchX] = useState<number | null>(null);
+
   const close = useCallback(() => setOpenIndex(null), []);
   const show = useCallback(
     (dir: number) =>
@@ -50,7 +52,7 @@ export default function Gallery() {
               onClick={() => setOpenIndex(index)}
               aria-label={caption(index)}
               className={`group relative overflow-hidden rounded-2xl bg-sand-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-500 ${
-                index === 0 ? "col-span-2 row-span-2 lg:col-span-2" : ""
+                index === 0 ? "col-span-2 lg:row-span-2" : ""
               }`}
             >
               <Image
@@ -76,6 +78,13 @@ export default function Gallery() {
           aria-label={caption(openIndex)}
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-sea-950/90 p-4 backdrop-blur-sm"
           onClick={close}
+          onTouchStart={(e) => setTouchX(e.changedTouches[0].clientX)}
+          onTouchEnd={(e) => {
+            if (touchX === null) return;
+            const dx = e.changedTouches[0].clientX - touchX;
+            if (Math.abs(dx) > 40) show(dx < 0 ? 1 : -1);
+            setTouchX(null);
+          }}
         >
           {/* Close */}
           <button

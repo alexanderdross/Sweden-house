@@ -1,7 +1,7 @@
 {
   "brand": "Talo Flatönissä",
   "meta": {
-    "title": "Talo Flatönissä — moderni lomatalo Bohuslänin saaristossa",
+    "title": "Talo Flatönissä, moderni lomatalo Bohuslänin saaristossa",
     "description": "Tyylikäs ja moderni lomatalo Flatönin saarella keskellä Bohuslänin saaristoa, Ruotsissa. Tilaa jopa 8 vieraalle, koiraystävällinen, tilava terassi ja merikylpy lähellä. Varaa suoraan isännältä."
   },
   "nav": {
@@ -9,19 +9,21 @@
     "gallery": "Kuvat",
     "amenities": "Varustelu",
     "location": "Sijainti",
+    "area": "Alue",
     "availability": "Vapaat ajat",
     "book": "Lähetä varauspyyntö",
-    "bookNow": "Varaa"
+    "bookNow": "Varaa",
+    "menu": "Valikko"
   },
   "hero": {
     "tagline": "Rauhallinen ja tyylikäs pakopaikka Bohuslänin saaristossa",
-    "subtitle": "Moderni lomatalo Flatönin saarella — tilava terassi, takka ja merikylpy vain lyhyen kävelyn päässä. Täydellinen perheille, ystäville ja koirallesi.",
+    "subtitle": "Moderni lomatalo Flatönin saarella, tilava terassi, takka ja merikylpy vain lyhyen kävelyn päässä. Täydellinen perheille, ystäville ja koirallesi.",
     "cta": "Lähetä varauspyyntö",
     "ctaSecondary": "Katso kuvat"
   },
   "about": {
     "heading": "Tervetuloa taloon",
-    "body": "Flatönin saarella, keskellä Bohuslänin saaristoa, tämä moderni talo yhdistää luonnon ja mukavuuden rauhallisessa, kauniissa ympäristössä lähellä merta. Yläkerrassa on valoisa avokeittiö sekä olo- ja ruokailutila, josta on käynti tilavalle terassille, jossa on grilli ja kaasukäyttöinen pizzauuni. Sisällä on takka, suuret ikkunat täynnä valoa, ilmastointi kuumia päiviä varten ja avara kylpyhuone vapaasti seisovalla ammeella. Kolme makuuhuonetta ja lisävuodepaikat tekevät talosta ihanteellisen kuudelle vieraalle, ja tilaa on jopa kahdeksalle. Aurinkoisia päiviä terassilla, uintia meressä ja kodikkaita iltoja takan ääressä — ja koirat ovat lämpimästi tervetulleita.",
+    "body": "Flatönin saarella, keskellä Bohuslänin saaristoa, tämä moderni talo yhdistää luonnon ja mukavuuden rauhallisessa, kauniissa ympäristössä lähellä merta. Yläkerrassa on valoisa avokeittiö sekä olo- ja ruokailutila, josta on käynti tilavalle terassille, jossa on grilli ja kaasukäyttöinen pizzauuni. Sisällä on takka, suuret ikkunat täynnä valoa, ilmastointi kuumia päiviä varten ja avara kylpyhuone vapaasti seisovalla ammeella. Kolme makuuhuonetta ja lisävuodepaikat tekevät talosta ihanteellisen kuudelle vieraalle, ja tilaa on jopa kahdeksalle. Aurinkoisia päiviä terassilla, uintia meressä ja kodikkaita iltoja takan ääressä, ja koirat ovat lämpimästi tervetulleita.",
     "guests": "Vieraat",
     "bedrooms": "Makuuhuoneet",
     "beds": "Vuoteet",
@@ -72,7 +74,7 @@
   },
   "location": {
     "heading": "Tässä majoitut",
-    "body": "Talo sijaitsee Flatönin saarella, rauhallisella saarella, joka on yhdistetty siltaa pitkin Orustiin Bohuslänin rannikolla — noin 1,5 tuntia Göteborgista pohjoiseen. Ympärilläsi on sileitä kallioita, metsää ja avointa vettä, useita uimapaikkoja ja meri vain lyhyen kävelyn päässä. Kaupat ja ravintolat ovat lyhyen ajomatkan päässä Orustissa.",
+    "body": "Talo sijaitsee Flatönin saarella, rauhallisella saarella, joka on yhdistetty siltaa pitkin Orustiin Bohuslänin rannikolla, noin 1,5 tuntia Göteborgista pohjoiseen. Ympärilläsi on sileitä kallioita, metsää ja avointa vettä, useita uimapaikkoja ja meri vain lyhyen kävelyn päässä. Kaupat ja ravintolat ovat lyhyen ajomatkan päässä Orustissa.",
     "openInMaps": "Avaa Google Mapsissa",
     "coordinates": "Koordinaatit",
     "mapAlt": "Kartta, joka näyttää talon sijainnin Flatönissä, Bohuslänissä"
@@ -124,6 +126,7 @@
   },
   "faq": {
     "heading": "Hyvä tietää",
+    "titleSuffix": "Usein kysytyt kysymykset Flatönin lomatalosta, Bohuslän",
     "q1": "Miten varaan?",
     "a1": "Valitse päivät ja lähetä pyyntö lomakkeella. Vahvistamme saatavuuden sähköpostitse, yleensä 48 tunnin kuluessa. Tällä sivustolla ei veloiteta maksua.",
     "q2": "Miten sisäänkirjautuminen toimii?",
@@ -133,7 +136,31 @@
     "q4": "Miten pääsen perille?",
     "a4": "Flatönille on noin 1,5 tunnin ajomatka Göteborgista pohjoiseen, ja sinne pääsee siltaa pitkin Orustista. Auto on helpoin tapa tutustua saaristoon, ja tontilla on ilmainen pysäköinti.",
     "q5": "Onko tämä sama kuin Airbnb-ilmoituksenne?",
-    "a5": "Kyllä – kyseessä on sama talo. Varaamalla suoraan täältä tavoitat meidät ilman alustan palvelumaksuja. Voit toki halutessasi varata myös Airbnb:n kautta."
+    "a5": "Kyllä – kyseessä on sama talo. Varaamalla suoraan täältä tavoitat meidät ilman alustan palvelumaksuja. Voit toki halutessasi varata myös Airbnb:n kautta.",
+    "q6": "Mitä taloon sisältyy?",
+    "a6": "Liinavaatteet ja pyyhkeet sisältyvät, samoin täysin varusteltu keittiö, pesukone, ilmainen Wi-Fi, työpiste, TV, takka ja ilmastointi. Terassilla on grilli ja kaasukäyttöinen pizzauuni.",
+    "q7": "Missä voimme uida lähistöllä?",
+    "a7": "Meri ja useita uimapaikkoja on vain lyhyen kävelyn päässä talosta. Bohuslänin sileät kalliot ja suojaisat lahdet ovat täydellisiä uintiin lämpiminä päivinä."
+  },
+  "area": {
+    "heading": "Tutustu Flatöniin ja Bohuslänin saaristoon",
+    "intro": "Talo on tukikohtasi Orustin ja Bohuslänin saarten tutkimiseen – Ruotsin länsirannikko sileine kallioineen, suojaisine lahtineen ja kalastajakylineen. Tässä muutamia suosikkeja helposti saavutettavissa.",
+    "swim": {
+      "title": "Uinti ja meri",
+      "body": "Kävele muutama minuutti vedelle pulahtaaksesi kallioilta, tai etsi suojaisia hiekkalahtia Flatönin ja Orustin ympäriltä. Ota kajakki mukaan ja tutki saariston tyyniä vesiä."
+    },
+    "nature": {
+      "title": "Vaellus ja luonto",
+      "body": "Rannikkopolut mutkittelevat kallioniemekkeiden yli sekä männiköiden ja kanervikoiden läpi. Orust on yksi Ruotsin suurimmista saarista, jossa on rauhallisia teitä, näköalapaikkoja ja luonnonsuojelualueita."
+    },
+    "villages": {
+      "title": "Rannikkokylät",
+      "body": "Vieraile Ellösin, Mollösundin ja Gullholmenin viehättävissä satamissa – klassisia bohuslänilaisia kalastajakyliä putiikkeineen, gallerioineen ja jäätelöineen laiturin äärellä."
+    },
+    "food": {
+      "title": "Äyriäiset ja paikalliset maut",
+      "body": "Länsirannikko on kuuluisa katkaravuista, ostereista ja simpukoista. Hae tuoreita äyriäisiä paikallisista satamista tai sytytä pizzauuni ja grilli terassilla."
+    }
   },
   "footer": {
     "tagline": "Moderni lomatalo Flatönissä, Bohuslänissä.",
@@ -143,7 +170,7 @@
     "language": "Kieli"
   },
   "email": {
-    "guestSubject": "Olemme vastaanottaneet varauspyyntösi — {house}",
+    "guestSubject": "Olemme vastaanottaneet varauspyyntösi, {house}",
     "guestGreeting": "Hei {name},",
     "guestIntro": "Kiitos pyynnöstäsi majoittua kohteessa {house}. Olemme vastaanottaneet alla olevat tiedot ja vastaamme 48 tunnin kuluessa vahvistaaksemme saatavuuden. Maksua ei ole veloitettu.",
     "guestOutro": "Toivotamme sinut lämpimästi tervetulleeksi Flatönille!",
@@ -158,6 +185,6 @@
     "labelMessage": "Viesti",
     "labelEstimate": "Arvioitu yhteensä",
     "labelLanguage": "Vieraan kieli",
-    "signature": "— {house}"
+    "signature": "{house}"
   }
 }

@@ -7,10 +7,10 @@ import { toISODate, addDaysISO, type DateRange } from "./dates";
  *
  * Airbnb exports each reservation / host-blocked period as an all-day VEVENT
  * with `DTSTART;VALUE=DATE` (check-in) and `DTEND;VALUE=DATE` (check-out, which
- * is exclusive — the guest leaves that morning). node-ical builds these
+ * is exclusive, the guest leaves that morning). node-ical builds these
  * date-only values at LOCAL midnight, and `toISODate` reads local components,
  * so the calendar date is correct in any server timezone. Do NOT switch this to
- * UTC getters — that reintroduces an off-by-one in zones behind UTC.
+ * UTC getters, that reintroduces an off-by-one in zones behind UTC.
  */
 export function eventsToRanges(
   data: Record<string, ical.CalendarComponent>,
@@ -19,7 +19,7 @@ export function eventsToRanges(
 
   for (const component of Object.values(data)) {
     if (component.type !== "VEVENT") continue;
-    // Skip cancelled reservations — those nights are free again.
+    // Skip cancelled reservations, those nights are free again.
     if (component.status === "CANCELLED") continue;
     if (!component.start) continue;
 
