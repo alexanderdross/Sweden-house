@@ -32,6 +32,9 @@
   },
   "gallery": {
     "heading": "A look around",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
     "captions": {
       "exterior": "The black timber house at dusk",
       "kitchen": "Modern open-plan kitchen",
@@ -77,6 +80,9 @@
   "availability": {
     "heading": "Availability",
     "subtitle": "Greyed-out dates are already booked. Select your nights, then send a request below.",
+    "refresh": "Refresh",
+    "syncedWithAirbnb": "Synced with Airbnb",
+    "updatedAt": "updated {time}",
     "available": "Available",
     "booked": "Booked",
     "selected": "Your stay",

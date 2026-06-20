@@ -32,6 +32,9 @@
   },
   "gallery": {
     "heading": "En titt runt huset",
+    "close": "Stäng",
+    "previous": "Föregående",
+    "next": "Nästa",
     "captions": {
       "exterior": "Det svarta trähuset i skymningen",
       "kitchen": "Modernt kök i öppen planlösning",
@@ -77,6 +80,9 @@
   "availability": {
     "heading": "Tillgänglighet",
     "subtitle": "Gråmarkerade datum är redan bokade. Välj dina nätter och skicka en förfrågan nedan.",
+    "refresh": "Uppdatera",
+    "syncedWithAirbnb": "Synkad med Airbnb",
+    "updatedAt": "uppdaterad {time}",
     "available": "Ledigt",
     "booked": "Bokat",
     "selected": "Din vistelse",

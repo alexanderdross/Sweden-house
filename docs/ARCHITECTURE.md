@@ -25,9 +25,10 @@ src/app/[locale]/page.tsx     ── assembles the landing sections (server comp
 
 ## Internationalization (next-intl, v3.26)
 
-- `i18n/routing.ts` — `defineRouting` with `locales = [sv, en, da, fi, de]`,
-  `defaultLocale = sv`, `localePrefix = "always"`. Also exports the typed
-  navigation helpers (`Link`, `useRouter`, `usePathname`).
+- `i18n/routing.ts` — `defineRouting` with `locales = [en, sv, da, fi, de]`,
+  `defaultLocale = en`, `localePrefix = "always"`. Also exports `localeNames`,
+  `localeFlags`, and the typed navigation helpers (`Link`, `useRouter`,
+  `usePathname`).
 - `i18n/request.ts` — `getRequestConfig` loads `messages/<locale>.json`.
 - `src/middleware.ts` — wires routing into the request pipeline. **Must be under
   `src/`** because the app uses a `src/` directory.
@@ -53,11 +54,19 @@ Components never hard-code facts or copy: facts come from `content/*`, copy from
 - `src/lib/dates.ts` — timezone-safe `YYYY-MM-DD` helpers: `toISODate`,
   `fromISODate`, `nightsBetween`, `expandBlockedNights`, `rangeOverlapsBlocked`.
   Ranges use **exclusive check-out** (a stay of nights `start … end-1`).
-- `src/lib/availability.ts` — `getBlockedRanges()` merges the Airbnb iCal feed
-  (`AIRBNB_ICAL_URL`, parsed with `node-ical`) with `property.manualBlockedRanges`.
-  A failing/missing feed degrades gracefully to manual ranges only.
-- `src/app/api/availability/route.ts` — `GET` returns `{ ranges }` with
-  `revalidate = 3600` + cache headers, so Airbnb is polled at most hourly.
+- `src/lib/ical.ts` — pure parsing: `eventsToRanges` / `parseIcsToRanges` /
+  `fetchIcsRanges`. Skips `STATUS:CANCELLED`, defaults a missing `DTEND` to one
+  night, and is timezone-safe (see the note in the file). Covered by
+  `test/ical.test.ts`.
+- `src/lib/availability.ts` — `getAvailability()` merges the Airbnb iCal feed
+  (`AIRBNB_ICAL_URL`) with `property.manualBlockedRanges` and returns
+  `{ ranges, updatedAt, airbnbSynced }`. A failing/missing feed degrades
+  gracefully to manual ranges only.
+- `src/app/api/availability/route.ts` — `GET` returns that payload with
+  `revalidate = 3600` + cache headers, so Airbnb is polled at most hourly. The
+  client shows a "synced with Airbnb · updated HH:MM" badge and a refresh button.
+- **Verify sync** with `npm run sync:check -- <ical-url-or-file>`, which prints
+  the exact blocked ranges the site computes for comparison against Airbnb.
 - `src/app/api/booking-request/route.ts` — `POST`:
   1. Zod-validates the payload (incl. a honeypot `company` field).
   2. Enforces min nights and re-checks availability server-side (defense in

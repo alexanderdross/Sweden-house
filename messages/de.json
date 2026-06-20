@@ -32,6 +32,9 @@
   },
   "gallery": {
     "heading": "Ein Rundgang",
+    "close": "Schließen",
+    "previous": "Zurück",
+    "next": "Weiter",
     "captions": {
       "exterior": "Das schwarze Holzhaus in der Dämmerung",
       "kitchen": "Moderne offene Küche",
@@ -77,6 +80,9 @@
   "availability": {
     "heading": "Verfügbarkeit",
     "subtitle": "Ausgegraute Daten sind bereits gebucht. Wählen Sie Ihre Nächte und senden Sie unten eine Anfrage.",
+    "refresh": "Aktualisieren",
+    "syncedWithAirbnb": "Mit Airbnb synchronisiert",
+    "updatedAt": "aktualisiert {time}",
     "available": "Verfügbar",
     "booked": "Gebucht",
     "selected": "Ihr Aufenthalt",

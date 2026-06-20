@@ -32,6 +32,9 @@
   },
   "gallery": {
     "heading": "Katsaus taloon",
+    "close": "Sulje",
+    "previous": "Edellinen",
+    "next": "Seuraava",
     "captions": {
       "exterior": "Musta puutalo hämärässä",
       "kitchen": "Moderni avokeittiö",
@@ -77,6 +80,9 @@
   "availability": {
     "heading": "Vapaat ajat",
     "subtitle": "Harmaat päivät on jo varattu. Valitse yösi ja lähetä pyyntö alta.",
+    "refresh": "Päivitä",
+    "syncedWithAirbnb": "Synkronoitu Airbnb:n kanssa",
+    "updatedAt": "päivitetty {time}",
     "available": "Vapaa",
     "booked": "Varattu",
     "selected": "Oleskelusi",

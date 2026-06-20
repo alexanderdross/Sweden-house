@@ -31,6 +31,13 @@ export function nightsBetween(start: string, end: string): number {
   return Math.round(ms / 86_400_000);
 }
 
+/** Add `days` to a `YYYY-MM-DD` date, returning a `YYYY-MM-DD` string. */
+export function addDaysISO(value: string, days: number): string {
+  const d = fromISODate(value);
+  d.setDate(d.getDate() + days);
+  return toISODate(d);
+}
+
 /**
  * Expand booked ranges into a Set of every occupied NIGHT (`YYYY-MM-DD`).
  * A range start..end (end exclusive) occupies the nights start .. end-1.

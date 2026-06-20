@@ -14,12 +14,18 @@ export default function Availability({
   blockedNights,
   loading,
   error,
+  airbnbSynced,
+  updatedAt,
+  onRefresh,
 }: {
   range: RdpRange | undefined;
   onSelect: (range: RdpRange | undefined) => void;
   blockedNights: Set<string>;
   loading: boolean;
   error: boolean;
+  airbnbSynced: boolean;
+  updatedAt?: string;
+  onRefresh: () => void;
 }) {
   const t = useTranslations("availability");
   const locale = useLocale() as keyof typeof LOCALES;
@@ -27,12 +33,39 @@ export default function Availability({
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
+  const updatedLabel = updatedAt
+    ? new Date(updatedAt).toLocaleTimeString(locale, {
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    : null;
+
   return (
     <div>
-      <h3 className="font-serif text-xl font-semibold text-sea-900">
-        {t("heading")}
-      </h3>
-      <p className="mt-2 text-sm text-sea-600">{t("subtitle")}</p>
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <h3 className="font-serif text-xl font-semibold text-sea-900">
+            {t("heading")}
+          </h3>
+          <p className="mt-2 text-sm text-sea-600">{t("subtitle")}</p>
+        </div>
+        <button
+          type="button"
+          onClick={onRefresh}
+          disabled={loading}
+          className="shrink-0 rounded-full border border-sea-200 px-3 py-1.5 text-xs font-medium text-sea-700 transition hover:border-sea-400 disabled:opacity-50"
+        >
+          {t("refresh")}
+        </button>
+      </div>
+
+      {airbnbSynced && (
+        <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-sea-100 px-3 py-1 text-xs font-medium text-sea-700">
+          <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
+          {t("syncedWithAirbnb")}
+          {updatedLabel ? ` · ${t("updatedAt", { time: updatedLabel })}` : ""}
+        </p>
+      )}
 
       {error && (
         <p className="mt-3 rounded-lg bg-sand-100 px-3 py-2 text-sm text-sea-700">
@@ -58,9 +91,6 @@ export default function Availability({
               { before: today },
               (day: Date) => blockedNights.has(toISODate(day)),
             ]}
-            modifiersClassNames={{
-              selected: "rdp-selected",
-            }}
           />
         )}
       </div>

@@ -16,26 +16,30 @@ deployed on **Vercel**.
 
 ```bash
 npm install        # install deps
-npm run dev        # dev server at http://localhost:3000 (redirects to /sv)
+npm run dev        # dev server at http://localhost:3000 (redirects to /en)
 npm run build      # production build (run this to verify before committing)
 npm run start      # serve the production build
 npm run lint       # eslint
+npm test           # node:test via tsx — date math + Airbnb iCal parsing
+npm run sync:check -- <ical-url-or-file>   # print blocked dates the site sees
 ```
 
-There is no test suite. **Verify changes with `npm run build`** and a manual
-smoke test of `/sv`, `/en`, `/da`, `/fi`, `/de`, `/api/availability`, and a
-POST to `/api/booking-request`.
+**Verify changes with `npm run build` + `npm test`** and a manual smoke test of
+`/en`, `/sv`, `/da`, `/fi`, `/de`, `/api/availability`, and a POST to
+`/api/booking-request`. The iCal date handling is timezone-sensitive — run
+`TZ=Europe/Stockholm npm test` too.
 
 ## Architecture (one-paragraph map)
 
 Requests hit `src/middleware.ts` (next-intl) which enforces a locale prefix and
-redirects `/` → `/sv`. Pages live under `src/app/[locale]/` and are assembled in
+redirects `/` → `/en`. Pages live under `src/app/[locale]/` and are assembled in
 `page.tsx` from server components in `src/components/`. The booking UI
 (`BookingSection.tsx`) is the only client-heavy area: it fetches
-`/api/availability` (Airbnb iCal + manual blocks, parsed in
-`src/lib/availability.ts`), drives a `react-day-picker` calendar, and POSTs to
-`/api/booking-request`, which validates with Zod, re-checks availability, and
-sends localized SMTP emails via `src/lib/email.ts`.
+`/api/availability` (Airbnb iCal + manual blocks, parsed in `src/lib/ical.ts`
+and combined in `src/lib/availability.ts`), drives a `react-day-picker`
+calendar, and POSTs to `/api/booking-request`, which validates with Zod,
+re-checks availability, and sends localized SMTP emails via `src/lib/email.ts`.
+`Gallery.tsx` is a client component with a keyboard-navigable lightbox.
 
 ## Conventions & gotchas
 
@@ -48,7 +52,9 @@ sends localized SMTP emails via `src/lib/email.ts`.
   `content/*`, `@i18n/*` → `i18n/*`.
 - **Dates** are timezone-safe `YYYY-MM-DD` strings everywhere; helpers in
   `src/lib/dates.ts`. iCal/booking ranges use an **exclusive check-out** date
-  (hotel-night convention).
+  (hotel-night convention). node-ical builds all-day events at LOCAL midnight
+  and `toISODate` reads local components — keep it that way; switching to UTC
+  getters reintroduces an off-by-one in zones behind UTC (covered by tests).
 - **Images**: self-hosted WebP in `public/images/`, imported statically in
   `content/gallery.ts` (gives automatic dimensions + blur placeholder). Use
   `next/image` with `placeholder="blur"` and a `sizes` prop; only the hero is
@@ -67,7 +73,8 @@ sends localized SMTP emails via `src/lib/email.ts`.
 | Photos / gallery order | `content/gallery.ts` (+ files in `public/images/`) |
 | Any text, in any language | `messages/<locale>.json` |
 | Add a language | `i18n/routing.ts` (`locales`, `localeNames`) + new `messages/<x>.json` + middleware matcher |
-| Availability logic | `src/lib/availability.ts`, `src/app/api/availability/route.ts` |
+| Availability / Airbnb sync logic | `src/lib/ical.ts`, `src/lib/availability.ts`, `src/app/api/availability/route.ts` |
+| Tests | `test/*.test.ts` (run via `npm test`) |
 | Booking email content/flow | `src/app/api/booking-request/route.ts`, `messages/*.json` → `email.*` |
 
 ## Property facts (source of truth = `content/property.ts`)
@@ -80,7 +87,7 @@ sends localized SMTP emails via `src/lib/email.ts`.
   workspace, exercise equipment, free on-site parking.
 - Dog-friendly. Self check-in via keypad/code lock. Host: Malin.
 - Airbnb: https://www.airbnb.de/rooms/956609902841163645
-- Languages: Swedish (default), English, Danish, Finnish, German.
+- Languages: English (default), Swedish, Danish, Finnish, German.
 
 ## More docs
 
